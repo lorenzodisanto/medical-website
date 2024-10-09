@@ -1,5 +1,5 @@
 <script>
-// importo header e footer e projectlist
+// importo header e footer
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
 
@@ -20,8 +20,6 @@ export default {
   <app-footer></app-footer>
 </template>
 
-<style scoped>
-.logo {
-  width: 1000px;
-}
+<style lang="scss">
+@use "./styles/general.scss";
 </style>
