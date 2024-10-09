@@ -14,12 +14,15 @@ export default {
 
 <template>
   <app-header></app-header>
-  <div class="logo">
-    <img src="/public/logo/DiSanto.logotipo-02.svg" alt="" />
+  <div>
+    <img src="/public/logo/DiSanto.logotipo.payoff.orizzontale-01.png" alt="" />
   </div>
   <app-footer></app-footer>
 </template>
 
 <style lang="scss">
 @use "./styles/general.scss";
+img {
+  width: 100%;
+}
 </style>
