@@ -4,17 +4,27 @@
   <header>
     <div class="container d-flex justify-content-between align-items-center">
       <div class="header-logo">
-        <img src="../../public/logo/DiSanto.logotipo-02.svg" alt="" />
+        <router-link :to="{ name: 'home' }">
+          <img src="../../public/logo/DiSanto.logotipo-02.svg" alt="" />
+        </router-link>
       </div>
       <div>
         <ul class="d-flex mb-0">
-          <li>LINK1</li>
-          <li>LINK2</li>
-          <li>LINK3</li>
-          <li>LINK4</li>
+          <li>
+            <router-link :to="{ name: 'about' }"> Chi siamo </router-link>
+          </li>
+          <li>
+            <router-link :to="{ name: 'service' }"> Servizi </router-link>
+          </li>
+          <li>
+            <router-link :to="{ name: 'gallery' }"> Fotogallery </router-link>
+          </li>
+          <li>
+            <router-link :to="{ name: 'contact' }"> Contatti </router-link>
+          </li>
         </ul>
       </div>
-      <div>CONTATTI</div>
+      <div>Chiama ora</div>
     </div>
   </header>
 </template>

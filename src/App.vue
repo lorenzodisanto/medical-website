@@ -14,9 +14,7 @@ export default {
 
 <template>
   <app-header></app-header>
-  <div>
-    <img src="/public/logo/DiSanto.logotipo.payoff.orizzontale-01.png" alt="" />
-  </div>
+  <router-view></router-view>
   <app-footer></app-footer>
 </template>
 
