@@ -15,14 +15,6 @@
           />
         </div>
         <div class="col">
-          <h4>Contatti</h4>
-          <ul>
-            <li>Via Benevento 19, 82037 Telese Terme (BN)</li>
-            <li>+39 347 89 60 497</li>
-            <li>dott.salvatoredisanto@gmail.com</li>
-          </ul>
-        </div>
-        <div class="col">
           <h4>Servizi</h4>
           <ul>
             <li>Igiene professionale</li>
@@ -31,6 +23,14 @@
             <li>Chirurgia orale e Implantologia</li>
             <li>Radiologia</li>
             <li>Scansione digitale</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Contatti</h4>
+          <ul>
+            <li>Via Benevento 19, 82037 Telese Terme (BN)</li>
+            <li>+39 347 89 60 497</li>
+            <li>dott.salvatoredisanto@gmail.com</li>
           </ul>
         </div>
       </div>

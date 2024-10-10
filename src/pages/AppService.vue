@@ -1,13 +1,12 @@
 <script>
+import OurServices from "../components/home/OurServices.vue";
 export default {
   name: "AppService",
+
+  components: { OurServices },
 };
 </script>
 
-<template>
-  <section>
-    <h1 class="mt-5 mb-3">Servizi</h1>
-  </section>
-</template>
+<template><our-services></our-services></template>
 
 <style scoped></style>
