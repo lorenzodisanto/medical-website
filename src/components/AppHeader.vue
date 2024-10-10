@@ -11,16 +11,16 @@
       <div>
         <ul class="d-flex mb-0">
           <li>
-            <router-link :to="{ name: 'about' }"> Chi siamo </router-link>
+            <router-link :to="{ name: 'about' }"> CHI SIAMO </router-link>
           </li>
           <li>
-            <router-link :to="{ name: 'service' }"> Servizi </router-link>
+            <router-link :to="{ name: 'service' }"> SERVIZI </router-link>
           </li>
           <li>
-            <router-link :to="{ name: 'gallery' }"> Fotogallery </router-link>
+            <router-link :to="{ name: 'gallery' }"> FOTOGALLERY </router-link>
           </li>
           <li>
-            <router-link :to="{ name: 'contact' }"> Contatti </router-link>
+            <router-link :to="{ name: 'contact' }"> CONTATTI </router-link>
           </li>
         </ul>
       </div>
@@ -39,6 +39,10 @@ header {
   li {
     list-style: none;
     margin-right: 50px;
+    a {
+      text-decoration: none;
+      color: black;
+    }
   }
 }
 </style>

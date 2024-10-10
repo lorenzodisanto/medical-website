@@ -5,6 +5,16 @@
     <div class="container">
       <div class="row py-4">
         <div class="col">
+          <h4>Orari di apertura</h4>
+          <ul>
+            <li>Lunedì - Sabato</li>
+          </ul>
+          <img
+            src="../../public/logo/DiSanto.logotipo.payoff.verticale-04.svg"
+            alt=""
+          />
+        </div>
+        <div class="col">
           <h4>Contatti</h4>
           <ul>
             <li>Via Benevento 19, 82037 Telese Terme (BN)</li>
@@ -13,7 +23,7 @@
           </ul>
         </div>
         <div class="col">
-          <h3>Servizi</h3>
+          <h4>Servizi</h4>
           <ul>
             <li>Igiene professionale</li>
             <li>Ortodonzia</li>
@@ -23,15 +33,9 @@
             <li>Scansione digitale</li>
           </ul>
         </div>
-        <div class="col">
-          <h3>Orari di apertura</h3>
-          <ul>
-            <li>Lunedì - Sabato</li>
-          </ul>
-        </div>
       </div>
     </div>
-    <div class="copyright">
+    <div class="footer-bottom">
       <div class="container py-2">
         <span>
           Copyright © Di Santo Odontoiatria Specialistica. All Rights Reserved.
@@ -42,9 +46,11 @@
   </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use "../styles/partials/variables" as *;
 footer {
-  border: 1px dashed red;
+  background-color: $sage;
+  color: $white;
 
   ul {
     display: inline;
@@ -54,8 +60,8 @@ footer {
     }
   }
 
-  .copyright {
-    border: 1px dashed red;
+  .footer-bottom {
+    background-color: black;
     span {
       font-size: 0.8rem;
     }

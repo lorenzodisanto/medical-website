@@ -13,22 +13,22 @@ const router = createRouter({
       component: AppHome,
     },
     {
-      path: "/ChiSiamo",
+      path: "/chi-siamo",
       name: "about",
       component: AppAbout,
     },
     {
-      path: "/Servizi",
+      path: "/servizi",
       name: "service",
       component: AppService,
     },
     {
-      path: "/Fotogallery",
+      path: "/fotogallery",
       name: "gallery",
       component: AppGallery,
     },
     {
-      path: "/Contatti",
+      path: "/contatti",
       name: "contact",
       component: AppContact,
     },

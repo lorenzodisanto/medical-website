@@ -1,2 +1,29 @@
+@use "./partials/variables" as *;
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: "ITCAvantGardeStdBold";
+  src: url("../assets/fonts/ITCAvantGardeStdBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITCAvantGardeStdDemi";
+  src: url("../assets/fonts/ITCAvantGardeStdDemi.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITCAvantGardeStdMd";
+  src: url("../assets/fonts/ITCAvantGardeStdMd.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: $sage;
+  font-family: "ITCAvantGardeStdMd", sans-serif;
+}
