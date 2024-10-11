@@ -33,7 +33,11 @@
 @use "../styles/partials/variables" as *;
 
 header {
-  border: 1px dashed black;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 0px 2px 3px 0px $sage;
+  z-index: 1;
 
   .header-logo {
     width: 200px;
