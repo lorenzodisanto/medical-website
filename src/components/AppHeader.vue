@@ -24,12 +24,14 @@
           </li>
         </ul>
       </div>
-      <div>Chiama ora</div>
+      <div class="btn btn-call p-2">Chiama ora</div>
     </div>
   </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use "../styles/partials/variables" as *;
+
 header {
   border: 1px dashed black;
 
@@ -43,6 +45,10 @@ header {
       text-decoration: none;
       color: black;
     }
+  }
+  .btn-call {
+    color: white;
+    background-color: $sage;
   }
 }
 </style>
