@@ -7,11 +7,15 @@ export default {
 <template>
   <section>
     <div class="container border">
-      <div class="row p-4 text-center">
-        <div class="col">Lumineers</div>
-        <div class="col">Lyra etk</div>
-        <div class="col">Swiss dental academy</div>
-        <div class="col">Blancone</div>
+      <div class="row p-4 text-center g-4">
+        <div class="col">Centro di eccellenza LUMINEERS</div>
+        <div class="col">
+          Centreo di eccellenza di implantologia digitale LYRA ETK
+        </div>
+        <div class="col">
+          Centreo di eccellenza GBT dalla “SWISS DENTAL ACADEMY”
+        </div>
+        <div class="col">Centro sbiancamento dentale BLANCONE</div>
       </div>
     </div>
   </section>

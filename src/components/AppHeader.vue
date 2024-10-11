@@ -31,7 +31,7 @@
 
 <style scoped>
 header {
-  border: 1px dashed red;
+  border: 1px dashed black;
 
   .header-logo {
     width: 200px;

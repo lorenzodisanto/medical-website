@@ -5,8 +5,9 @@ export default {
 </script>
 
 <template>
-  <section class="container">
+  <section class="container p-4">
     <h1 class="mt-5 mb-3">Chi siamo</h1>
+    <img src="/public/logo/DiSanto.logotipo.payoff.orizzontale-01.png" alt="" />
     <p>
       Di Santo Odontoiatria Specialistica è un centro odontoiatrico a Telese
       Terme (BN). Lavoriamo con passione, con precisione grazie ai nostri

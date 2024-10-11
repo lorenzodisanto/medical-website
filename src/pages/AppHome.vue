@@ -14,9 +14,9 @@ export default {
 
 <template>
   <hero></hero>
-  <partners></partners>
   <welcome></welcome>
   <our-services></our-services>
+  <partners></partners>
   <rewies></rewies>
   <google-map></google-map>
 </template>
