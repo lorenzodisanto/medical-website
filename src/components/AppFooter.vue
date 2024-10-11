@@ -1,4 +1,14 @@
-<script></script>
+<script>
+// importo store
+import { store } from "../store";
+export default {
+  data() {
+    return {
+      store,
+    };
+  },
+};
+</script>
 
 <template>
   <footer>
@@ -17,12 +27,16 @@
         <div class="col">
           <h4>Servizi</h4>
           <ul>
-            <li>Igiene professionale</li>
-            <li>Ortodonzia</li>
-            <li>Gnatologia ed Elettromiografia di superficie</li>
-            <li>Chirurgia orale e Implantologia</li>
-            <li>Radiologia</li>
-            <li>Scansione digitale</li>
+            <li v-for="service in store.services">
+              <router-link
+                :to="{
+                  name: 'service-details',
+                  params: { slug: service.slug },
+                }"
+              >
+                {{ service.name }}
+              </router-link>
+            </li>
           </ul>
         </div>
         <div class="col">
@@ -57,6 +71,10 @@ footer {
     li {
       list-style: none;
       padding: 5px;
+      a {
+        text-decoration: none;
+        color: white;
+      }
     }
   }
 
