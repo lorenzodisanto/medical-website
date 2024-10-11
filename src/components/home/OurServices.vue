@@ -17,9 +17,9 @@ export default {
       <h2 class="text-center pt-4">I nostri servizi</h2>
       <div class="row g-3 p-4">
         <div class="col-4" v-for="service in store.services">
-          <div class="card">
+          <div class="card h-100">
             <img
-              src="../../../public/logo/DiSanto.logotipo-02.svg"
+              src="../../../public/logo/DiSanto.logotipo-01.svg"
               class="card-img-top"
               alt="..."
             />

@@ -6,7 +6,7 @@ export default {
 
 <template>
   <section>
-    <div class="border">
+    <div>
       <img
         src="/public/logo/DiSanto.logotipo.payoff.orizzontale-01.png"
         alt=""
@@ -15,8 +15,9 @@ export default {
   </section>
 </template>
 
-<style scoped>
-.border {
-  border: 1px dashed black;
+<style lang="scss" scoped>
+@use "../../styles/partials/variables.scss" as *;
+section {
+  background-color: $fresh-teal;
 }
 </style>

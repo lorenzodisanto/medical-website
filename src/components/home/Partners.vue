@@ -7,7 +7,7 @@ export default {
 <template>
   <section>
     <div class="container-fluid border">
-      <div class="row text-center">
+      <div class="row p-5 text-center">
         <div class="col">Centro di eccellenza LUMINEERS</div>
         <div class="col">
           Centreo di eccellenza di implantologia digitale LYRA ETK
