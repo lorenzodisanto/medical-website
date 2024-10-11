@@ -6,7 +6,7 @@ export default {
 
 <template>
   <section>
-    <div class="container border p-5 d-flex">
+    <div class="border p-5 d-flex">
       <div class="w-50 align-self-center">
         <h3>RECENSIONI CLIENTI</h3>
         <p>Nessuna recensione disponibile</p>

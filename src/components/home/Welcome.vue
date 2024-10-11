@@ -6,7 +6,7 @@ export default {
 
 <template>
   <section>
-    <div class="container border d-flex">
+    <div class="border d-flex">
       <div class="w-50">
         <img
           src="../../../public/logo/DiSanto.logotipo.payoff.verticale-03.svg"
@@ -14,7 +14,7 @@ export default {
         />
       </div>
       <div class="w-50">
-        <p class="p-5">
+        <p class="p-5 fs-5">
           Di Santo Odontoiatria Specialistica è un centro odontoiatrico a Telese
           Terme (BN). Lavoriamo con passione, con precisione grazie ai nostri
           Microscopi che usiamo in tutti i campi dell’odontoiatria e sempre

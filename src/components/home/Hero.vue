@@ -6,7 +6,7 @@ export default {
 
 <template>
   <section>
-    <div class="container border">
+    <div class="border">
       <img
         src="/public/logo/DiSanto.logotipo.payoff.orizzontale-01.png"
         alt=""

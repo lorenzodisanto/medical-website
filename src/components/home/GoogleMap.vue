@@ -6,7 +6,7 @@ export default {
 
 <template>
   <section>
-    <div class="container border p-5"><h3>MAPPA non disponibile</h3></div>
+    <div class="border p-5"><h3>MAPPA non disponibile</h3></div>
   </section>
 </template>
 
