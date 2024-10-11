@@ -4,6 +4,7 @@ import AppAbout from "./pages/AppAbout.vue";
 import AppService from "./pages/AppService.vue";
 import AppGallery from "./pages/AppGallery.vue";
 import AppContact from "./pages/AppContact.vue";
+import Details from "./components/services/Details.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -31,6 +32,11 @@ const router = createRouter({
       path: "/contatti",
       name: "contact",
       component: AppContact,
+    },
+    {
+      path: "/servizi/:slug",
+      name: "service-details",
+      component: Details,
     },
   ],
 });

@@ -2,7 +2,25 @@
 export default {
   data() {
     return {
-      services: [
+      service: {},
+    };
+  },
+  mounted() {
+    const serviceName = this.$route.params.slug;
+    // Cerco il servizio corrispondente utilizzando il parametro 'slug'
+    const foundService = this.services.find(
+      (service) => service.slug === serviceName
+    );
+    if (foundService) {
+      this.service = foundService;
+    } else {
+      // Gestisco il caso in cui il servizio non viene trovato
+      this.$router.push("/"); // Torna alla lista dei servizi
+    }
+  },
+  computed: {
+    services() {
+      return [
         {
           name: "Igiene professionale (GBT)",
           description:
@@ -20,7 +38,7 @@ export default {
         {
           name: "Gnatologia ed Elettromiografia di superficie",
           description:
-            "Digrigni o serri i denti? Soffri di mal di testa o dolori cervicali? ",
+            "Digrigni o serri i denti? Soffri di mal di testa o dolori cervicali?",
           image: ".",
           slug: "gnatologia-ed-elettromiografia-di-superficie",
         },
@@ -45,47 +63,19 @@ export default {
           image: ".",
           slug: "scansione-digitale",
         },
-      ],
-    };
+      ];
+    },
   },
 };
 </script>
 
 <template>
-  <section>
-    <div class="container border">
-      <h2 class="text-center pt-4">I nostri servizi</h2>
-      <div class="row g-3 p-4">
-        <div class="col-4" v-for="service in this.services">
-          <div class="card">
-            <img
-              src="../../../public/logo/DiSanto.logotipo-02.svg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">{{ service.name }}</h5>
-              <p class="card-text">
-                {{ service.description }}
-              </p>
-              <router-link
-                :to="{
-                  name: 'service-details',
-                  params: { slug: service.slug },
-                }"
-              >
-                Vai al servizio
-              </router-link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <div class="container p-5">
+    <h2>{{ service.name }}</h2>
+    <p>{{ service.description }}</p>
+    <router-link to="/servizi">Torna ai servizi</router-link>
+    <img src="/public/logo/DiSanto.logotipo.payoff.orizzontale-01.png" alt="" />
+  </div>
 </template>
 
-<style scoped>
-.border {
-  border: 1px dashed black;
-}
-</style>
+<style scoped></style>
