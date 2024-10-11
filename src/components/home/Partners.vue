@@ -6,7 +6,7 @@ export default {
 
 <template>
   <section>
-    <div class="container border">
+    <div class="border">
       <div class="row p-4 text-center g-4">
         <div class="col">Centro di eccellenza LUMINEERS</div>
         <div class="col">
