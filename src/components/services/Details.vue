@@ -31,9 +31,9 @@ export default {
 
 <template>
   <div class="container p-5">
-    <h2>{{ service.name }}</h2>
-    <p class="fs-5">{{ service.details }}</p>
     <router-link to="/servizi">Torna ai servizi</router-link>
+    <h2 class="mt-4 mb-4">{{ service.name }}</h2>
+    <p class="fs-5">{{ service.details }}</p>
     <img src="/public/logo/DiSanto.logotipo.payoff.orizzontale-01.png" alt="" />
   </div>
 </template>
