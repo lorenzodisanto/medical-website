@@ -55,6 +55,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "../../styles/partials/variables.scss" as *;
+
 .card {
   .img-container {
     overflow: hidden;
@@ -66,7 +67,7 @@ export default {
     h5 {
       font-weight: 600;
     }
-    background-color: $fresh-teal;
+    // background-color: $fresh-teal;
   }
 }
 .card:hover img {

@@ -34,3 +34,15 @@ body {
   color: $sage;
   font-family: "ITC Avant Garde Gothic Std";
 }
+
+.btn-sage {
+  color: $white;
+  background-color: $sage;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn-sage:hover {
+  transform: scale(1.1);
+}

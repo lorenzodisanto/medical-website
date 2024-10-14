@@ -24,7 +24,7 @@
           </li>
         </ul>
       </div>
-      <div class="btn btn-call p-2">Chiama ora</div>
+      <div class="btn-sage">Chiama ora</div>
     </div>
   </header>
 </template>
@@ -49,10 +49,6 @@ header {
       text-decoration: none;
       color: black;
     }
-  }
-  .btn-call {
-    color: white;
-    background-color: $sage;
   }
 }
 </style>
