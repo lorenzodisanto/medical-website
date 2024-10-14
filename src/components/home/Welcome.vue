@@ -31,7 +31,13 @@ export default {
   </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use "../../styles/partials/variables" as *;
+
+section {
+  background-color: $bone;
+  color: black;
+}
 .border {
   border: 1px dashed black;
 }
