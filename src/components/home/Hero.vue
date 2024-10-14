@@ -8,15 +8,19 @@ export default {
 
       slides: [
         {
-          text: "Centro di Odontoiatria Microscopica",
+          title: "Centro di Odontoiatria Microscopica",
           img: "slide_01.png",
         },
         {
-          text: "Studio Odontoiatrico che mette al centro di tutte le cure il Microscopio e l'innovazione digitale",
+          text_01:
+            "Studio Odontoiatrico che mette al centro di tutte le cure il Microscopio e l'innovazione digitale",
           img: "slide_02.jpg",
         },
         {
-          text: "L'Odontoiatra al Microscopio è un medico che non si accontenta. Preciso, attento, delicato. Richiede il massimo a se stesso per dare il massimo ai propri pazienti",
+          text_01:
+            "L'Odontoiatra al Microscopio è un medico che non si accontenta.",
+          text_02:
+            "Preciso, attento, delicato. Richiede il massimo a se stesso per dare il massimo ai propri pazienti",
           img: "slide_03.JPEG",
         },
       ],
@@ -51,7 +55,7 @@ export default {
     setAutoplay() {
       this.autoPlay = setInterval(() => {
         this.nextClick();
-      }, 5000);
+      }, 8000);
     },
   },
 
@@ -63,22 +67,24 @@ export default {
 
 <template>
   <section>
-    <div class="container d-flex justify-content-between">
-      <div class="w-50 hero-logo">
+    <div class="container slider-content">
+      <div class="hero-text">
         <img
           src="/public/logo/DiSanto.logotipo.payoff.verticale-01.png"
           alt=""
         />
-        <h3 class="mt-5">{{ slides[activeSlide].text }}</h3>
+        <h1 class="mt-5">{{ slides[activeSlide].title }}</h1>
+        <h2 class="mt-5 mb-0">{{ slides[activeSlide].text_01 }}</h2>
+        <h2>{{ slides[activeSlide].text_02 }}</h2>
       </div>
-      <div class="hero-profile">
+      <div class="hero-image">
         <img :src="buildImagePath(slides[activeSlide].img)" alt="" />
       </div>
       <div class="prev arrow" @click="prevClick()">
-        <span><-</span>
+        <font-awesome-icon icon="fa-solid fa-angle-left" />
       </div>
       <div class="next arrow" @click="nextClick()">
-        <span>-></span>
+        <font-awesome-icon icon="fa-solid fa-angle-right" />
       </div>
     </div>
   </section>
@@ -87,45 +93,53 @@ export default {
 <style lang="scss" scoped>
 @use "../../styles/partials/variables.scss" as *;
 section {
-  background-color: $fresh-teal;
+  background-image: url(../../assets/heroImg/hero-background.png);
+  background-size: cover;
   height: 675px;
   position: relative;
-  .hero-logo {
-    margin-top: 80px;
-    img {
-      width: 80%;
-    }
-    h1 {
-      font-weight: 500;
-      margin-top: 50px;
-    }
-  }
-  .hero-profile {
-    width: 500px;
+
+  .slider-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    img {
-      width: 100%;
+    justify-content: space-between;
+    height: 100%;
+
+    .hero-text {
+      margin-top: 80px;
+      width: 50%;
+      img {
+        width: 80%;
+      }
+      h1 {
+        font-weight: 500;
+        margin-top: 50px;
+      }
     }
-  }
-  .arrow {
-    position: absolute;
-    background-color: $bone;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    top: 50%;
-    cursor: pointer;
-  }
-  .prev {
-    left: 50px;
-  }
-  .next {
-    right: 50px;
+    .hero-image {
+      width: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+    .arrow {
+      position: absolute;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      top: 50%;
+      cursor: pointer;
+    }
+    .prev {
+      left: 50px;
+    }
+    .next {
+      right: 50px;
+    }
   }
 }
 </style>
