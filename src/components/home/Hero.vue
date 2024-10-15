@@ -74,8 +74,8 @@ export default {
           alt=""
         />
         <h1 class="mt-5">{{ slides[activeSlide].title }}</h1>
-        <h2 class="mt-5 mb-0">{{ slides[activeSlide].text_01 }}</h2>
-        <h2>{{ slides[activeSlide].text_02 }}</h2>
+        <h3 class="mt-5 mb-0">{{ slides[activeSlide].text_01 }}</h3>
+        <h3>{{ slides[activeSlide].text_02 }}</h3>
       </div>
       <div class="hero-image">
         <img :src="buildImagePath(slides[activeSlide].img)" alt="" />

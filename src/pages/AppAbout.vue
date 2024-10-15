@@ -7,7 +7,7 @@ export default {
 <template>
   <section>
     <div class="container pt-4">
-      <h1 class="mt-5 mb-5 text-center">Chi siamo</h1>
+      <h2 class="mt-5 mb-5 text-center">Chi siamo</h2>
       <!-- <img src="/public/logo/DiSanto.logotipo.payoff.orizzontale-01.png" alt="" /> -->
       <div class="fs-5">
         <div class="left mb-5">
@@ -70,9 +70,6 @@ section {
   background-image: url(../assets/heroImg/hero-background.png);
   background-size: cover;
 
-  .border {
-    border: 1px solid rebeccapurple;
-  }
   p {
     text-align: justify;
   }
