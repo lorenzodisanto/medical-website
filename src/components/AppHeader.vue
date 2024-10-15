@@ -11,20 +11,28 @@
       <div>
         <ul class="d-flex mb-0">
           <li>
-            <router-link :to="{ name: 'about' }"> CHI SIAMO </router-link>
+            <router-link :to="{ name: 'about' }" active-class="active">
+              CHI SIAMO
+            </router-link>
           </li>
           <li>
-            <router-link :to="{ name: 'service' }"> SERVIZI </router-link>
+            <router-link :to="{ name: 'service' }" active-class="active">
+              SERVIZI
+            </router-link>
           </li>
           <li>
-            <router-link :to="{ name: 'gallery' }"> FOTOGALLERY </router-link>
+            <router-link :to="{ name: 'gallery' }" active-class="active">
+              FOTOGALLERY
+            </router-link>
           </li>
           <li>
-            <router-link :to="{ name: 'contact' }"> CONTATTI </router-link>
+            <router-link :to="{ name: 'contact' }" active-class="active">
+              CONTATTI
+            </router-link>
           </li>
         </ul>
       </div>
-      <div class="btn-sage">Chiama ora</div>
+      <div class="btn-sage"><a href="tel:+393478960497">Chiama ora</a></div>
     </div>
   </header>
 </template>

@@ -128,6 +128,9 @@ export default {
       position: relative;
       padding: 25px;
       width: 600px;
+      h4 {
+        font-weight: 600;
+      }
       p {
         text-align: justify;
         font-size: 1.1rem;

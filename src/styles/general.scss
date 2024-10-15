@@ -41,8 +41,17 @@ body {
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 10px;
+  a {
+    text-decoration: none;
+    color: $white;
+  }
 }
 
 .btn-sage:hover {
   transform: scale(1.02);
+}
+.active {
+  background-color: $fresh-teal;
+  border-radius: 5px;
+  padding: 10px 15px;
 }

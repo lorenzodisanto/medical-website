@@ -32,7 +32,7 @@ export default {
         <div class="col">
           <h4>Servizi</h4>
           <ul>
-            <li v-for="service in store.services">
+            <li v-for="service in store.services" class="service-footer">
               -
               <router-link
                 :to="{
@@ -61,7 +61,7 @@ export default {
                 class="me-3 fs-5"
               />+39 347 89 60 497
             </li>
-            <li>
+            <li class="mail-link">
               <font-awesome-icon
                 :icon="['fas', 'envelope']"
                 class="me-3 fs-5"
@@ -118,6 +118,15 @@ footer {
     span {
       font-size: 0.8rem;
     }
+  }
+  .service-footer:hover a {
+    color: $fresh-teal;
+  }
+  .mail-link:hover a {
+    color: $fresh-teal;
+  }
+  .link-instagram:hover a {
+    color: $fresh-teal;
   }
 }
 </style>
