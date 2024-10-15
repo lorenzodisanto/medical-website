@@ -67,7 +67,7 @@ export default {
     h5 {
       font-weight: 600;
     }
-    // background-color: $fresh-teal;
+    background-color: #7dc9b825;
   }
 }
 .card:hover img {

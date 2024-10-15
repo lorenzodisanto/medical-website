@@ -17,10 +17,25 @@ import {
   faAngleLeft,
   faAngleRight,
   faStar,
+  faCalendarDay,
+  faLocationDot,
+  faMobileScreen,
+  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 /* add icons to the library */
-library.add(faAngleLeft, faAngleRight, faStar);
+library.add(
+  faAngleLeft,
+  faAngleRight,
+  faStar,
+  faCalendarDay,
+  faLocationDot,
+  faMobileScreen,
+  faEnvelope,
+  faInstagram
+);
 
 const app = createApp(App);
 

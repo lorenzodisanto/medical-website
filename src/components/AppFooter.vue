@@ -15,9 +15,14 @@ export default {
     <div class="container">
       <div class="row py-4">
         <div class="col">
-          <h4>Orari di apertura</h4>
+          <h4>Giorni di apertura</h4>
           <ul>
-            <li>Lunedì - Sabato</li>
+            <li>
+              <font-awesome-icon
+                :icon="['fas', 'calendar-day']"
+                class="me-3 fs-5"
+              />Lunedì - Sabato
+            </li>
           </ul>
           <img
             src="../../public/logo/DiSanto.logotipo.payoff.verticale-04.svg"
@@ -28,11 +33,13 @@ export default {
           <h4>Servizi</h4>
           <ul>
             <li v-for="service in store.services">
+              -
               <router-link
                 :to="{
                   name: 'service-details',
                   params: { slug: service.slug },
                 }"
+                class="ms-2"
               >
                 {{ service.name }}
               </router-link>
@@ -42,9 +49,34 @@ export default {
         <div class="col">
           <h4>Contatti</h4>
           <ul>
-            <li>Via Benevento 19, 82037 Telese Terme (BN)</li>
-            <li>+39 347 89 60 497</li>
-            <li>dott.salvatoredisanto@gmail.com</li>
+            <li>
+              <font-awesome-icon
+                :icon="['fas', 'location-dot']"
+                class="me-3 fs-5"
+              />Via Benevento 19, 82037 Telese Terme (BN)
+            </li>
+            <li>
+              <font-awesome-icon
+                :icon="['fas', 'mobile-screen']"
+                class="me-3 fs-5"
+              />+39 347 89 60 497
+            </li>
+            <li>
+              <font-awesome-icon
+                :icon="['fas', 'envelope']"
+                class="me-3 fs-5"
+              />
+              <a href="mailto:dott.salvatoredisanto@gmail.com"
+                >dott.salvatoredisanto@gmail.com</a
+              >
+            </li>
+            <li class="link-instagram">
+              <a
+                href="https://www.instagram.com/disanto_odonto_specialistica/"
+                target="_blank"
+                ><font-awesome-icon :icon="['fab', 'instagram']"
+              /></a>
+            </li>
           </ul>
         </div>
       </div>
@@ -75,6 +107,9 @@ footer {
         text-decoration: none;
         color: white;
       }
+    }
+    .link-instagram {
+      font-size: 2.3rem;
     }
   }
 

@@ -33,7 +33,8 @@ export default {
 @use "../../styles/partials/variables" as *;
 
 section {
-  background-color: $bone;
+  background-image: url(../../assets/sala-bg.png);
+  background-size: cover;
   color: black;
   .welcome-content {
     display: flex;
