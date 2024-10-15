@@ -33,15 +33,13 @@ export default {
           <h4>Servizi</h4>
           <ul>
             <li v-for="service in store.services" class="service-footer">
-              -
               <router-link
                 :to="{
                   name: 'service-details',
                   params: { slug: service.slug },
                 }"
-                class="ms-2"
               >
-                {{ service.name }}
+                - {{ service.name }}
               </router-link>
             </li>
           </ul>
@@ -62,12 +60,11 @@ export default {
               />+39 347 89 60 497
             </li>
             <li class="mail-link">
-              <font-awesome-icon
-                :icon="['fas', 'envelope']"
-                class="me-3 fs-5"
-              />
               <a href="mailto:dott.salvatoredisanto@gmail.com"
-                >dott.salvatoredisanto@gmail.com</a
+                ><font-awesome-icon
+                  :icon="['fas', 'envelope']"
+                  class="me-3 fs-5"
+                />dott.salvatoredisanto@gmail.com</a
               >
             </li>
             <li class="link-instagram">

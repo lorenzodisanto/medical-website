@@ -68,8 +68,8 @@ export default {
         <img src="../../assets/review.jpg" alt="" />
       </div>
       <div class="text-review">
-        <div class="review-container">
-          <div class="review-box">
+        <div class="review-box">
+          <div>
             <h4 class="text-center mb-2">{{ reviews[activeSlide].name }}</h4>
             <div class="text-center mb-3 text-warning">
               <span><font-awesome-icon :icon="['fas', 'star']" /></span>
@@ -86,15 +86,17 @@ export default {
               <font-awesome-icon icon="fa-solid fa-angle-right" />
             </div>
           </div>
-          <div class="google-logo">
-            <img src="../../assets/google.png" alt="" />
-          </div>
-          <div class="btn-sage">
-            <a
-              href="https://www.google.com/maps/place/Di+Santo+Odontoiatria+Specialistica+-+Studio+Dentistico+Dott.+Salvatore+Di+Santo/@41.2152785,14.5294724,17z/data=!4m16!1m9!3m8!1s0x133a44664664863d:0xe5e10b9c118d0bb3!2sDi+Santo+Odontoiatria+Specialistica+-+Studio+Dentistico+Dott.+Salvatore+Di+Santo!8m2!3d41.2162413!4d14.5290035!9m1!1b1!16s%2Fg%2F11c5758ck4!3m5!1s0x133a44664664863d:0xe5e10b9c118d0bb3!8m2!3d41.2162413!4d14.5290035!16s%2Fg%2F11c5758ck4!5m1!1e4?authuser=0&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D"
-              target="_blank"
-              >Tutte le Recensioni</a
-            >
+          <div class="review-box-bottom">
+            <div class="google-logo">
+              <img src="../../assets/google.png" alt="" />
+            </div>
+            <div class="btn-sage">
+              <a
+                href="https://www.google.com/maps/place/Di+Santo+Odontoiatria+Specialistica+-+Studio+Dentistico+Dott.+Salvatore+Di+Santo/@41.2152785,14.5294724,17z/data=!4m16!1m9!3m8!1s0x133a44664664863d:0xe5e10b9c118d0bb3!2sDi+Santo+Odontoiatria+Specialistica+-+Studio+Dentistico+Dott.+Salvatore+Di+Santo!8m2!3d41.2162413!4d14.5290035!9m1!1b1!16s%2Fg%2F11c5758ck4!3m5!1s0x133a44664664863d:0xe5e10b9c118d0bb3!8m2!3d41.2162413!4d14.5290035!16s%2Fg%2F11c5758ck4!5m1!1e4?authuser=0&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                >Tutte le Recensioni</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -117,42 +119,43 @@ export default {
   justify-content: center;
   background-image: url(../../assets/poltrona-bg.png);
   background-size: cover;
-  .review-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    .review-box {
-      background-color: rgba(31, 60, 62, 0.13);
-      border-radius: 10px;
-      position: relative;
-      padding: 25px;
-      width: 600px;
-      h4 {
-        font-weight: 600;
-      }
-      p {
-        text-align: justify;
-        font-size: 1.1rem;
-        margin: 0;
-      }
-      .arrow {
-        position: absolute;
-        font-size: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        top: 45%;
-        cursor: pointer;
-      }
-      .prev {
-        left: -50px;
-      }
-      .next {
-        right: -50px;
-      }
+
+  .review-box {
+    background-color: rgba(31, 60, 62, 0.13);
+    border-radius: 10px;
+    position: relative;
+    padding: 25px;
+    width: 600px;
+    h4 {
+      font-weight: 600;
     }
+    p {
+      text-align: justify;
+      font-size: 1.1rem;
+      margin: 0;
+    }
+    .arrow {
+      position: absolute;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      top: 45%;
+      cursor: pointer;
+    }
+    .prev {
+      left: -50px;
+    }
+    .next {
+      right: -50px;
+    }
+    .review-box-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     a {
       text-decoration: none;
       color: $white;
