@@ -5,39 +5,114 @@ export default {
 </script>
 
 <template>
-  <section class="container p-4">
-    <h1 class="mt-5 mb-3">Chi siamo</h1>
-    <img src="/public/logo/DiSanto.logotipo.payoff.orizzontale-01.png" alt="" />
-    <div class="fs-5">
-      <p>
-        Di Santo Odontoiatria Specialistica è un centro odontoiatrico a Telese
-        Terme (BN). Lavoriamo con passione, con precisione grazie ai nostri
-        Microscopi che usiamo in tutti i campi dell’odontoiatria e sempre
-        attenti all’innovazione, mettendo al primo posto il benessere e la
-        salute dei pazienti.
-      </p>
-      <p>
-        Ci occupiamo di tutte le branche dell’Odontoiatria: Pedodonzia,
-        Conservativa ed Endodonzia, Chirurgia orale ed Implantologia,
-        Riabilitazioni protesiche, Ortodonzia fissa, mobile ed invisibile,
-        Gnatologia. Inoltre siamo specializzati in igiene e prevenzione, in
-        estetica dentale e Centro di Sbiancamento autorizzato Blancone.
-      </p>
-      <p>
-        Sono il dott Salvatore Di Santo, direttore Sanitario della clinica “Di
-        Santo Odontoiatra Specialistica”, Centro di Eccellenza Lumineers per le
-        faccette dentali , Centro di Eccellenza in Implantologia digitale Lyra
-        Etk, Centro di Eccellenza GBT dalla “Swiss Dental Academy” e Centro
-        d’Eccellenza per lo Sbiancamento Dentale BlancOne. Curare il tuo sorriso
-        significa farti vivere un’esperienza avvolgente, perchè deve essere un
-        percorso di benessere. Credo in questo fermamente e ci metto tutto
-        l’impegno. Ogni paziente è unico come è unico il suo sorriso, per questo
-        motivo io e il mio team affrontiamo ogni caso con precisione, impegno ed
-        attenzione, partendo dalle procedure più semplici fino agli interventi
-        più complessi, offrendo soluzioni e cure di qualità per tutti.
-      </p>
+  <section>
+    <div class="container pt-4">
+      <h1 class="mt-5 mb-5 text-center">Chi siamo</h1>
+      <!-- <img src="/public/logo/DiSanto.logotipo.payoff.orizzontale-01.png" alt="" /> -->
+      <div class="fs-5">
+        <div class="left mb-5">
+          <div class="left-image">
+            <img src="../assets/about/ingresso.JPG" alt="" />
+          </div>
+          <div class="right-text">
+            <p>
+              Di Santo Odontoiatria Specialistica è un centro odontoiatrico a
+              Telese Terme (BN). Lavoriamo con passione, con precisione grazie
+              ai nostri Microscopi che usiamo in tutti i campi dell’odontoiatria
+              e sempre attenti all’innovazione, mettendo al primo posto il
+              benessere e la salute dei pazienti.
+            </p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="left-text">
+            <p>
+              Ci occupiamo di tutte le branche dell’Odontoiatria: Pedodonzia,
+              Conservativa ed Endodonzia, Chirurgia orale ed Implantologia,
+              Riabilitazioni protesiche, Ortodonzia fissa, mobile ed invisibile,
+              Gnatologia. Inoltre siamo specializzati in igiene e prevenzione,
+              in estetica dentale e Centro di Sbiancamento autorizzato Blancone.
+            </p>
+          </div>
+          <div class="right-image">
+            <img src="../assets/about/poltrona.JPG" alt="" />
+          </div>
+        </div>
+        <div class="left mt-5">
+          <div class="profile-image">
+            <img src="../assets/heroImg/slide_01.png" alt="" />
+          </div>
+          <div class="right-description">
+            <p>
+              Sono il dott <b>Salvatore Di Santo</b>, direttore Sanitario della
+              clinica “Di Santo Odontoiatra Specialistica”, Centro di Eccellenza
+              Lumineers per le faccette dentali , Centro di Eccellenza in
+              Implantologia digitale Lyra Etk, Centro di Eccellenza GBT dalla
+              “Swiss Dental Academy” e Centro d’Eccellenza per lo Sbiancamento
+              Dentale BlancOne. Curare il tuo sorriso significa farti vivere
+              un’esperienza avvolgente, perchè deve essere un percorso di
+              benessere. Credo in questo fermamente e ci metto tutto l’impegno.
+              Ogni paziente è unico come è unico il suo sorriso, per questo
+              motivo io e il mio team affrontiamo ogni caso con precisione,
+              impegno ed attenzione, partendo dalle procedure più semplici fino
+              agli interventi più complessi, offrendo soluzioni e cure di
+              qualità per tutti.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+section {
+  background-image: url(../assets/heroImg/hero-background.png);
+  background-size: cover;
+
+  .border {
+    border: 1px solid rebeccapurple;
+  }
+  p {
+    text-align: justify;
+  }
+  .left {
+    display: flex;
+    justify-content: space-between;
+    .left-image {
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+    .right-text {
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: space-between;
+    .right-image {
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+    .left-text {
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-top: 100px;
+    }
+  }
+  .profile-image {
+    width: 30%;
+  }
+  .right-description {
+    width: 60%;
+    padding-left: 20px;
+    padding-top: 100px;
+  }
+}
+</style>
