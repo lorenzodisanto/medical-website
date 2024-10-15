@@ -6,12 +6,10 @@ export default {
 
 <template>
   <section>
-    <div class="border p-5"><h3>MAPPA non disponibile</h3></div>
+    <div>
+      <img src="../../assets/map.png" alt="" />
+    </div>
   </section>
 </template>
 
-<style scoped>
-.border {
-  border: 1px dashed black;
-}
-</style>
+<style scoped></style>
