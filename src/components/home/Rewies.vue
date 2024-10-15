@@ -118,6 +118,7 @@ export default {
   align-items: center;
   justify-content: center;
   background-image: url(../../assets/poltrona-bg.png);
+  background-attachment: fixed;
   background-size: cover;
 
   .review-box {

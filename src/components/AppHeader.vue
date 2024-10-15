@@ -55,7 +55,10 @@ header {
     margin-right: 50px;
     a {
       text-decoration: none;
-      color: black;
+      color: $sage;
+    }
+    a:hover {
+      color: $fresh-teal;
     }
   }
 }

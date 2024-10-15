@@ -69,6 +69,7 @@ export default {
 section {
   background-image: url(../assets/heroImg/hero-background.png);
   background-size: cover;
+  background-attachment: fixed;
 
   p {
     text-align: justify;

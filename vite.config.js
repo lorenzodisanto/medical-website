@@ -11,4 +11,8 @@ export default defineConfig({
       "font/woff2": ["woff2"],
     },
   },
+
+  optimizeDeps: {
+    include: ["@fawmi/vue-google-maps", "fast-deep-equal"],
+  },
 });

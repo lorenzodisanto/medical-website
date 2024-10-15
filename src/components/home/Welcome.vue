@@ -34,7 +34,9 @@ export default {
 
 section {
   background-image: url(../../assets/sala-bg.png);
+  background-attachment: fixed;
   background-size: cover;
+  background-position: center;
   color: black;
   .welcome-content {
     display: flex;

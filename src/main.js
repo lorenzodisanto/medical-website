@@ -1,6 +1,8 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 
+import VueGoogleMaps from "@fawmi/vue-google-maps";
+
 import { router } from "./router";
 
 // Import all of Bootstrap's JS
@@ -38,6 +40,12 @@ library.add(
 );
 
 const app = createApp(App);
+
+app.use(VueGoogleMaps, {
+  load: {
+    key: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
+  },
+});
 
 app.use(router);
 app.component("font-awesome-icon", FontAwesomeIcon);
