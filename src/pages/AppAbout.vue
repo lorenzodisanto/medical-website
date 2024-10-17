@@ -67,7 +67,7 @@ export default {
 
 <style scoped>
 section {
-  background-image: url(../assets/heroImg/hero-background.png);
+  background-image: url(../assets/hero-background.png);
   background-size: cover;
   background-attachment: fixed;
 
