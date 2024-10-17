@@ -40,7 +40,7 @@ export default {
         </div>
         <div class="left mt-5">
           <div class="profile-image">
-            <img src="../assets/heroImg/slide_01.png" alt="" />
+            <img src="../assets/slide_01.png" alt="" />
           </div>
           <div class="right-description">
             <p>
