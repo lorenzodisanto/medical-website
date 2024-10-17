@@ -29,10 +29,7 @@ export default {
 
   methods: {
     buildImagePath(imageName) {
-      const imageUrl = new URL(
-        "../../assets/heroImg/" + imageName,
-        import.meta.url
-      );
+      const imageUrl = new URL("../../assets/" + imageName, import.meta.url);
       return imageUrl.href;
     },
 
@@ -93,7 +90,7 @@ export default {
 <style lang="scss" scoped>
 @use "../../styles/partials/variables.scss" as *;
 section {
-  background-image: url(../../assets/heroImg/hero-background.png);
+  background-image: url(../../assets/hero-background.png);
   background-size: cover;
   height: 675px;
   position: relative;

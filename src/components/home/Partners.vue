@@ -25,10 +25,7 @@ export default {
   },
   methods: {
     buildImagePath(imageName) {
-      const imageUrl = new URL(
-        "../../assets/partnersImg/" + imageName,
-        import.meta.url
-      );
+      const imageUrl = new URL("../../assets/" + imageName, import.meta.url);
       return imageUrl.href;
     },
   },
