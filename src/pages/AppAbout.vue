@@ -12,7 +12,7 @@ export default {
       <div class="fs-5">
         <div class="left mb-5">
           <div class="left-image">
-            <img src="../assets/about/ingresso.JPG" alt="" />
+            <img src="../assets/sala-attesa.jpg" alt="" />
           </div>
           <div class="right-text">
             <p>
@@ -35,7 +35,7 @@ export default {
             </p>
           </div>
           <div class="right-image">
-            <img src="../assets/about/poltrona.JPG" alt="" />
+            <img src="../assets/sala-attesa.jpg" alt="" />
           </div>
         </div>
         <div class="left mt-5">
