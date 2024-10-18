@@ -36,7 +36,7 @@ export default {
   <section>
     <div class="container-fluid">
       <h2 class="text-center py-3">Centro di Eccellenza</h2>
-      <div class="row p-3 text-center g-5">
+      <div class="row p-3 text-center">
         <div
           class="col-12 col-md-6 col-xl-3 col-box"
           v-for="partner in partners"
