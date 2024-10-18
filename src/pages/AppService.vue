@@ -7,6 +7,17 @@ export default {
 };
 </script>
 
-<template><our-services></our-services></template>
+<template>
+  <section>
+    <our-services></our-services>
+  </section>
+</template>
 
-<style scoped></style>
+<style scoped>
+section {
+  background-image: url(../assets/sala-bg.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: right;
+}
+</style>

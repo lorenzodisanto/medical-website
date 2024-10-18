@@ -66,8 +66,14 @@ export default {
   <section>
     <!-- HERO MOBILE -->
     <div class="d-md-none">
-      <div class="mobile-hero-slider">
-        <img src="/public/image/hero-mobile.png" alt="" />
+      <div class="pt-5 px-5">
+        <img
+          src="/public/logo/DiSanto.logotipo.payoff.verticale-01.png"
+          alt=""
+        />
+      </div>
+      <div class="slide-mobile">
+        <img src="/public/image/slide_01.png" alt="" />
       </div>
     </div>
 
@@ -100,7 +106,7 @@ export default {
 section {
   background-image: url(../../assets/hero-background.png);
   background-size: cover;
-  height: 560px;
+  height: 100%;
   position: relative;
 
   .slider-content {

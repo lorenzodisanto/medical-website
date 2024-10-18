@@ -65,7 +65,7 @@ section {
   background-image: url(../assets/sala-bg.png);
   background-attachment: fixed;
   background-size: cover;
-  background-position: center;
+  background-position: right;
   p {
     text-align: justify;
   }
@@ -79,7 +79,7 @@ section {
     background-color: $fresh-teal;
     width: 40px;
     height: 40px;
-    padding: 15px;
+    padding: 20px;
     border-radius: 50%;
   }
 }

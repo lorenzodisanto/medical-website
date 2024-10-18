@@ -37,7 +37,7 @@ export default {
 </script>
 
 <template>
-  <div class="container p-5">
+  <div class="container py-5">
     <router-link to="/servizi">Torna ai servizi</router-link>
     <h2 class="mt-4 mb-4">{{ service.name }}</h2>
     <p class="fs-5">{{ service.details }}</p>
