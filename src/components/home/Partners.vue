@@ -57,6 +57,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 .partner-box {
   padding: 0px 85px;

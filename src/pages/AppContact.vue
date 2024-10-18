@@ -17,7 +17,7 @@ export default {
         appuntamento.
       </p>
       <div class="row py-5">
-        <div class="col text-center">
+        <div class="col-12 col-md-6 col-lg-3 text-center">
           <font-awesome-icon
             :icon="['fas', 'location-dot']"
             class="mb-3 fs-1"
@@ -25,7 +25,7 @@ export default {
           <h4>Indirizzo</h4>
           <p>Via Benevento 19, 82037 Telese Terme (BN)</p>
         </div>
-        <div class="col text-center">
+        <div class="col-12 col-md-6 col-lg-3 text-center">
           <font-awesome-icon
             :icon="['fas', 'calendar-day']"
             class="mb-3 fs-1"
@@ -33,7 +33,7 @@ export default {
           <h4>Giorni di apertura</h4>
           <p>Lunedì - Sabato</p>
         </div>
-        <div class="col text-center">
+        <div class="col-12 col-md-6 col-lg-3 text-center">
           <font-awesome-icon
             :icon="['fas', 'mobile-screen']"
             class="mb-3 fs-1"
@@ -41,7 +41,7 @@ export default {
           <h4>Telefono/Whatsapp</h4>
           <p>+39 347 89 60 497</p>
         </div>
-        <div class="col text-center">
+        <div class="col-12 col-md-6 col-lg-3 text-center">
           <font-awesome-icon :icon="['fas', 'envelope']" class="mb-3 fs-1" />
           <h4>EMail</h4>
           <p>dott.salvatoredisanto@gmail.com</p>

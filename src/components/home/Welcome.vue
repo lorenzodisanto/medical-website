@@ -7,12 +7,13 @@ export default {
 <template>
   <section>
     <div class="container-fluid welcome-content">
-      <div class="welcome-image py-5">
+      <div class="welcome-image py-4">
+        <h3 class="mb-4 d-lg-none">Benvenuti nel nostro centro!</h3>
         <img src="../../assets/sala-attesa.jpg" alt="" />
       </div>
-      <div class="p-5">
-        <h3 class="mb-4">Benvenuti nel nostro centro!</h3>
-        <p class="fs-5 welcome-text">
+      <div>
+        <h3 class="d-none d-lg-block">Benvenuti nel nostro centro!</h3>
+        <p class="welcome-text pb-3">
           Di Santo Odontoiatria Specialistica è un centro odontoiatrico a Telese
           Terme (BN). Lavoriamo con passione, con precisione grazie ai nostri
           Microscopi che usiamo in tutti i campi dell’odontoiatria e sempre
@@ -39,12 +40,33 @@ section {
   background-position: center;
   color: black;
   .welcome-content {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    .welcome-image {
+      // text-align: end;
+      text-align: center;
+      img {
+        // width: 80%;
+        border-radius: 10px;
+      }
+    }
+    .welcome-text {
+      // width: 80%;
+      text-align: justify;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .welcome-content {
     display: flex;
     justify-content: center;
     align-items: center;
 
     .welcome-image {
       text-align: end;
+      text-align: center;
       img {
         width: 80%;
         border-radius: 10px;
@@ -53,6 +75,14 @@ section {
     .welcome-text {
       width: 80%;
       text-align: justify;
+      font-size: 0.8rem;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .welcome-content {
+    .welcome-text {
+      font-size: 1.1rem;
     }
   }
 }

@@ -10,7 +10,7 @@ export default {
       <h2 class="mt-5 mb-5 text-center">Chi siamo</h2>
       <!-- <img src="/public/logo/DiSanto.logotipo.payoff.orizzontale-01.png" alt="" /> -->
       <div class="fs-5">
-        <div class="left mb-5">
+        <div class="left mb-5 d-lg-flex">
           <div class="left-image">
             <img src="/image/ingresso.jpg" alt="" />
           </div>
@@ -24,7 +24,7 @@ export default {
             </p>
           </div>
         </div>
-        <div class="right">
+        <div class="right d-lg-flex">
           <div class="left-text">
             <p>
               Ci occupiamo di tutte le branche dell’Odontoiatria: Pedodonzia,
@@ -38,12 +38,9 @@ export default {
             <img src="/image/poltrona.jpg" alt="" />
           </div>
         </div>
-        <div class="left mt-5">
-          <div class="profile-image">
-            <img src="/image/slide_01.png" alt="" />
-          </div>
+        <div class="left mt-5 d-lg-flex">
           <div class="right-description">
-            <p>
+            <p class="pb-3">
               Sono il dott <b>Salvatore Di Santo</b>, direttore Sanitario della
               clinica “Di Santo Odontoiatra Specialistica”, Centro di Eccellenza
               Lumineers per le faccette dentali , Centro di Eccellenza in
@@ -59,6 +56,9 @@ export default {
               qualità per tutti.
             </p>
           </div>
+          <div class="profile-image d-none">
+            <img src="/image/slide_01.png" alt="" />
+          </div>
         </div>
       </div>
     </div>
@@ -73,44 +73,46 @@ section {
 
   p {
     text-align: justify;
+    margin-bottom: 0;
   }
   .left {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     .left-image {
       img {
         width: 90%;
-        border-radius: 10px;
+        /* border-radius: 10px; */
       }
     }
     .right-text {
-      padding-left: 0px;
-      padding-top: 20px;
+      /* padding-left: 0px;
+      padding-top: 20px; */
     }
   }
 
   .right {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     .right-image {
       img {
         width: 100%;
-        border-radius: 10px;
+        /* border-radius: 20px; */
+        padding-left: 60px;
       }
     }
     .left-text {
-      padding-right: 60px;
+      /* padding-right: 60px;
       padding-top: 20px;
-      padding-top: 100px;
+      padding-top: 100px; */
     }
   }
   .profile-image {
     width: 30%;
   }
   .right-description {
-    width: 60%;
-    padding-left: 20px;
-    padding-top: 100px;
+    /* width: 60%; */
+    /* padding-left: 20px;
+    padding-top: 100px; */
   }
 }
 </style>

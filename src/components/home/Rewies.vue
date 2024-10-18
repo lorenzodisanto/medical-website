@@ -63,7 +63,7 @@ export default {
 
 <template>
   <section>
-    <div class="d-flex">
+    <div class="d-lg-flex">
       <div class="image-review">
         <img src="../../assets/review.jpg" alt="" />
       </div>
@@ -107,13 +107,13 @@ export default {
 <style lang="scss" scoped>
 @use "../../styles/partials/variables.scss" as *;
 .image-review {
-  width: 40%;
+  // width: 40%;
   img {
     width: 100%;
   }
 }
 .text-review {
-  width: 60%;
+  // width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,14 +125,15 @@ export default {
     background-color: rgba(31, 60, 62, 0.13);
     border-radius: 10px;
     position: relative;
+    margin: 20px;
     padding: 25px;
-    width: 600px;
+    width: 80%;
     h4 {
       font-weight: 600;
     }
     p {
       text-align: justify;
-      font-size: 1.1rem;
+      font-size: 0.8rem;
       margin: 0;
     }
     .arrow {
@@ -146,10 +147,10 @@ export default {
       cursor: pointer;
     }
     .prev {
-      left: -50px;
+      left: -30px;
     }
     .next {
-      right: -50px;
+      right: -30px;
     }
     .review-box-bottom {
       display: flex;
@@ -168,6 +169,36 @@ export default {
     .btn-sage {
       display: inline-block;
       margin-top: 20px;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .image-review {
+    width: 60%;
+  }
+  .text-review {
+    width: 40%;
+    .review-box {
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .image-review {
+    width: 40%;
+  }
+  .text-review {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .text-review {
+    .review-box {
+      p {
+        font-size: 1.1rem;
+      }
     }
   }
 }
