@@ -64,6 +64,14 @@ export default {
 
 <template>
   <section>
+    <!-- HERO MOBILE -->
+    <div class="d-md-none">
+      <div class="mobile-hero-slider">
+        <img src="/public/image/hero-mobile.png" alt="" />
+      </div>
+    </div>
+
+    <!-- HERO DESKTOP-TABLET -->
     <div class="container slider-content">
       <div class="hero-text">
         <img
@@ -92,12 +100,12 @@ export default {
 section {
   background-image: url(../../assets/hero-background.png);
   background-size: cover;
-  height: 675px;
+  height: 560px;
   position: relative;
 
   .slider-content {
-    display: flex;
-    justify-content: space-between;
+    display: none;
+
     height: 100%;
 
     .hero-text {
@@ -136,6 +144,16 @@ section {
     }
     .next {
       right: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    height: 675px;
+    .slider-content {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }

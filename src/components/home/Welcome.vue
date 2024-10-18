@@ -82,7 +82,7 @@ section {
 @media screen and (min-width: 1200px) {
   .welcome-content {
     .welcome-text {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
   }
 }

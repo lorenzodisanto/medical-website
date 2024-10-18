@@ -86,7 +86,7 @@ export default {
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="container py-2">
+      <div class="container py-4 px-4">
         <span>
           Copyright © Di Santo Odontoiatria Specialistica. All Rights Reserved.
           Direttore sanitario: Dr. Salvatore Di Santo.

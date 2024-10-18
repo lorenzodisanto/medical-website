@@ -45,4 +45,8 @@ export default {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+p {
+  text-align: justify;
+}
+</style>
