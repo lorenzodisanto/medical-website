@@ -38,6 +38,7 @@ export default {
                   name: 'service-details',
                   params: { slug: service.slug },
                 }"
+                onclick="location.href='#top';"
               >
                 - {{ service.name }}
               </router-link>

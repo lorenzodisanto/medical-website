@@ -21,6 +21,13 @@ export default {
       this.$router.push("/servizi"); // Torna alla lista dei servizi
     }
   },
+  methods: {
+    buildImagePath(imageName) {
+      const imageUrl = new URL("/image/" + imageName, import.meta.url);
+      return imageUrl.href;
+    },
+  },
+
   computed: {
     services() {
       return store.services;
@@ -34,7 +41,7 @@ export default {
     <router-link to="/servizi">Torna ai servizi</router-link>
     <h2 class="mt-4 mb-4">{{ service.name }}</h2>
     <p class="fs-5">{{ service.details }}</p>
-    <img src="/public/logo/DiSanto.logotipo.payoff.orizzontale-01.png" alt="" />
+    <img :src="buildImagePath(service.image)" alt="" />
   </div>
 </template>
 

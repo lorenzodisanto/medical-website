@@ -11,23 +11,39 @@
       <div>
         <ul class="d-flex mb-0">
           <li>
-            <router-link :to="{ name: 'about' }" active-class="active">
+            <router-link
+              :to="{ name: 'about' }"
+              active-class="active"
+              onclick="location.href='#top';"
+            >
               CHI SIAMO
             </router-link>
           </li>
           <li>
-            <router-link :to="{ name: 'service' }" active-class="active">
+            <router-link
+              :to="{ name: 'service' }"
+              active-class="active"
+              onclick="location.href='#top';"
+            >
               SERVIZI
             </router-link>
           </li>
           <li>
-            <router-link :to="{ name: 'gallery' }" active-class="active">
+            <router-link
+              :to="{ name: 'gallery' }"
+              active-class="active"
+              onclick="location.href='#top';"
+            >
               FOTOGALLERY
             </router-link>
           </li>
           <li>
-            <router-link :to="{ name: 'contact' }" active-class="active">
-              CONTATTI
+            <router-link
+              :to="{ name: 'contact' }"
+              active-class="active"
+              onclick="location.href='#top';"
+            >
+              CONTATTACI
             </router-link>
           </li>
         </ul>

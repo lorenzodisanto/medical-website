@@ -12,7 +12,7 @@ export default {
       <div class="fs-5">
         <div class="left mb-5">
           <div class="left-image">
-            <img src="../assets/sala-attesa.jpg" alt="" />
+            <img src="/image/ingresso.jpg" alt="" />
           </div>
           <div class="right-text">
             <p>
@@ -35,7 +35,7 @@ export default {
             </p>
           </div>
           <div class="right-image">
-            <img src="../assets/sala-attesa.jpg" alt="" />
+            <img src="/image/poltrona.jpg" alt="" />
           </div>
         </div>
         <div class="left mt-5">
@@ -79,12 +79,12 @@ section {
     justify-content: space-between;
     .left-image {
       img {
-        width: 100%;
+        width: 90%;
         border-radius: 10px;
       }
     }
     .right-text {
-      padding-left: 20px;
+      padding-left: 0px;
       padding-top: 20px;
     }
   }
@@ -99,7 +99,7 @@ section {
       }
     }
     .left-text {
-      padding-right: 20px;
+      padding-right: 60px;
       padding-top: 20px;
       padding-top: 100px;
     }

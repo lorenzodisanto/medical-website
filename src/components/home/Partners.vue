@@ -35,8 +35,12 @@ export default {
 <template>
   <section>
     <div class="container-fluid">
-      <div class="row p-3 text-center">
-        <div class="col" v-for="partner in partners">
+      <h2 class="text-center py-3">Centro di Eccellenza</h2>
+      <div class="row p-3 text-center g-5">
+        <div
+          class="col-12 col-md-6 col-xl-3 col-box"
+          v-for="partner in partners"
+        >
           <a :href="partner.link" target="_blank">
             <div class="partner-box">
               <img :src="buildImagePath(partner.img)" alt="" />
@@ -49,7 +53,7 @@ export default {
 </template>
 
 <style scoped>
-.col {
+.col-box {
   display: flex;
   justify-content: center;
   align-items: center;
