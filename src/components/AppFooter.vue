@@ -14,68 +14,74 @@ export default {
   <footer>
     <div class="container">
       <div class="row py-4">
-        <div class="col">
-          <h4>Giorni di apertura</h4>
-          <ul>
-            <li>
-              <font-awesome-icon
-                :icon="['fas', 'calendar-day']"
-                class="me-3 fs-5"
-              />Lunedì - Sabato
-            </li>
-          </ul>
-          <img
-            src="../../public/logo/DiSanto.logotipo.payoff.verticale-04.svg"
-            alt=""
-          />
-        </div>
-        <div class="col">
-          <h4>Servizi</h4>
-          <ul>
-            <li v-for="service in store.services" class="service-footer">
-              <router-link
-                :to="{
-                  name: 'service-details',
-                  params: { slug: service.slug },
-                }"
-                onclick="location.href='#top';"
-              >
-                - {{ service.name }}
-              </router-link>
-            </li>
-          </ul>
-        </div>
-        <div class="col">
-          <h4>Contatti</h4>
-          <ul>
-            <li>
-              <font-awesome-icon
-                :icon="['fas', 'location-dot']"
-                class="me-3 fs-5"
-              />Via Benevento 19, 82037 Telese Terme (BN)
-            </li>
-            <li>
-              <font-awesome-icon
-                :icon="['fas', 'mobile-screen']"
-                class="me-3 fs-5"
-              />+39 347 89 60 497
-            </li>
-            <li class="mail-link">
-              <a href="mailto:dott.salvatoredisanto@gmail.com"
-                ><font-awesome-icon
-                  :icon="['fas', 'envelope']"
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="py-3">
+            <h4>Contatti</h4>
+            <ul>
+              <li>
+                <font-awesome-icon
+                  :icon="['fas', 'location-dot']"
                   class="me-3 fs-5"
-                />dott.salvatoredisanto@gmail.com</a
-              >
-            </li>
-            <li class="link-instagram">
-              <a
-                href="https://www.instagram.com/disanto_odonto_specialistica/"
-                target="_blank"
-                ><font-awesome-icon :icon="['fab', 'instagram']"
-              /></a>
-            </li>
-          </ul>
+                />Via Benevento 19, 82037 Telese Terme (BN)
+              </li>
+              <li>
+                <font-awesome-icon
+                  :icon="['fas', 'mobile-screen']"
+                  class="me-3 fs-5"
+                />+39 347 89 60 497
+              </li>
+              <li class="mail-link">
+                <a href="mailto:dott.salvatoredisanto@gmail.com"
+                  ><font-awesome-icon
+                    :icon="['fas', 'envelope']"
+                    class="me-3 fs-5"
+                  />dott.salvatoredisanto@gmail.com</a
+                >
+              </li>
+              <li class="link-instagram">
+                <a
+                  href="https://www.instagram.com/disanto_odonto_specialistica/"
+                  target="_blank"
+                  ><font-awesome-icon :icon="['fab', 'instagram']"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="py-3">
+            <h4>Servizi</h4>
+            <ul>
+              <li v-for="service in store.services" class="service-footer">
+                <router-link
+                  :to="{
+                    name: 'service-details',
+                    params: { slug: service.slug },
+                  }"
+                  onclick="location.href='#top';"
+                >
+                  - {{ service.name }}
+                </router-link>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="py-3">
+            <h4>Giorni di apertura</h4>
+            <ul>
+              <li>
+                <font-awesome-icon
+                  :icon="['fas', 'calendar-day']"
+                  class="me-3 fs-5"
+                />Lunedì - Sabato
+              </li>
+            </ul>
+            <img
+              src="../../public/logo/DiSanto.logotipo.payoff.verticale-04.svg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -95,6 +101,9 @@ export default {
 footer {
   background-color: $sage;
   color: $white;
+  h4 {
+    margin-bottom: 0;
+  }
 
   ul {
     display: inline;
