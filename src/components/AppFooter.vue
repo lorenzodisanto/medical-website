@@ -30,6 +30,12 @@ export default {
                   class="me-3 fs-5"
                 />+39 347 89 60 497
               </li>
+              <li>
+                <font-awesome-icon
+                  :icon="['fas', 'mobile-screen']"
+                  class="me-3 fs-5"
+                />0824 97 68 28
+              </li>
               <li class="mail-link">
                 <a href="mailto:dott.salvatoredisanto@gmail.com"
                   ><font-awesome-icon

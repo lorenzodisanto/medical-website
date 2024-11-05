@@ -20,6 +20,10 @@ export default {
           img: "lyraetk.png",
           link: "https://www.lyraetk.com/it/pagina-iniziale/",
         },
+        {
+          img: "doctor-smile.png",
+          link: "https://www.doctor-smile.com/",
+        },
       ],
     };
   },
@@ -38,7 +42,7 @@ export default {
       <h2 class="text-center py-3">Centro di Eccellenza</h2>
       <div class="row p-3 text-center">
         <div
-          class="col-12 col-md-6 col-xl-3 col-box"
+          class="col-12 col-md-6 col-xl-4 col-box"
           v-for="partner in partners"
         >
           <a :href="partner.link" target="_blank">

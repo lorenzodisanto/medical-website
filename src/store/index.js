@@ -16,7 +16,7 @@ export const store = reactive({
       name: "Ortodonzia",
       description:
         "Ci occupiamo di Ortodonzia intercettiva, tradizionale ed invisibile.",
-      image: "ortodonzia.jpeg",
+      image: "ortodonzia.png",
       slug: "ortodonzia",
       details:
         "Ci occupiamo di Ortodonzia intercettiva, tradizionale ed invisibile. Riuscire a stabilire un morso corretto è fondamentale per l’estetica ma soprattutto per la tua salute della bocca e del corpo. Tipicamente le terapie ortodontiche vengono realizzate da bambini, riuscendo così a intercettare problematiche di sviluppo fin dai primi anni di vita. Così facendo guidiamo un armonico accrescimento delle basi ossee e degli elementi dentali dei nostri piccoli pazienti. E’ possibile però intervenire anche da adulti, con tecniche e tempistiche diverse che, ad oggi, ci regalano un ventaglio di soluzioni terapeutiche per poter curare tutti i pazienti di tutte le fasce d’età.",
@@ -45,7 +45,7 @@ export const store = reactive({
       name: "Radiologia",
       description:
         "I servizi di radiologia digitale che offriamo: Ortopantomografia, endorale e TAC 3D",
-      image: "radiologia.JPG",
+      image: "radiologia.jpg",
       slug: "radiologia",
       details:
         "I servizi di radiologia digitale che offriamo (Ortopantomografia, endorale e TAC 3D) abbassano l’esposizione ai raggi X e aumentano la qualità delle immagini ottenute e sono un ausilio diagnostico utilissimo e spesso indispensabile.",
@@ -54,10 +54,19 @@ export const store = reactive({
       name: "Scansione digitale",
       description:
         "Lo scanner intraorale è un dispositivo per creare un modello digitale delle arcate dentali. ",
-      image: "scanner.jpg",
+      image: "scanner.png",
       slug: "scansione-digitale",
       details:
         "Lo scanner intraorale è un dispositivo che esegue una scansione del cavo orale per creare un modello digitale delle arcate dentali. Sostituisce le tradizionali impronte e permette di eseguire una scansione digitale e tridimensionale delle arcate dentarie del paziente. L’operazione si svolge semplicemente passando lo scanner, simile a una penna, all’interno della bocca in prossimità dei denti. Questa scansione ha come risultato un rendering 3D che può essere quindi essere esplorato in tutte le dimensioni. I dettagli anatomici che rivela sono molto più accurati rispetto alla tradizionale impronta.",
+    },
+    {
+      name: "Laser Dentistry",
+      description:
+        "Il Laser Erbio è una tecnologia utilizzata da pochissimi studi odontoiatrici.",
+      image: "laser.png",
+      slug: "laser-dentistry",
+      details:
+        "Il Laser Erbio è una tecnologia utilizzata da pochissimi studi odontoiatrici.Ha molte indicazioni e vantaggi, e noi utilizziamo i due tipi di laser più conosciuti per il nostro settore: Il Laser Erbio e il Laser Diodo. Grazie al nuovo Laser Kombi Doctor Smile, possiamo offrire trattamenti con tempi di intervento ridotti, sedute brevi e rilassanti, assenza di sanguinamento, meno anestesia e zero dolore, trattamenti versatili ed innovativi su tutti i tessuti duri e molli del cavo orale come: rimozione carie, devitalizzazioni, sigillature solchi, desensibilizzazione, Chirurgia ed implantologia, Parodontologia, Trattamento herpes ed afte, Biostimolazione",
     },
   ],
 });

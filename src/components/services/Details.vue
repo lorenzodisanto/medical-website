@@ -39,14 +39,23 @@ export default {
 <template>
   <div class="container py-5">
     <router-link to="/servizi">Torna ai servizi</router-link>
-    <h2 class="mt-4 mb-4">{{ service.name }}</h2>
-    <p class="fs-5">{{ service.details }}</p>
-    <img :src="buildImagePath(service.image)" alt="" />
+    <div>
+      <div>
+        <h2 class="mt-4 mb-4">{{ service.name }}</h2>
+        <p class="fs-5">{{ service.details }}</p>
+      </div>
+      <div class="image-service">
+        <img :src="buildImagePath(service.image)" alt="" />
+      </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
 p {
   text-align: justify;
+}
+.image-service {
+  width: 300px;
 }
 </style>
