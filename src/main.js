@@ -23,9 +23,13 @@ import {
   faLocationDot,
   faMobileScreen,
   faEnvelope,
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faInstagram,
+  faSquareFacebook,
+} from "@fortawesome/free-brands-svg-icons";
 
 /* add icons to the library */
 library.add(
@@ -36,7 +40,9 @@ library.add(
   faLocationDot,
   faMobileScreen,
   faEnvelope,
-  faInstagram
+  faInstagram,
+  faPhone,
+  faSquareFacebook
 );
 
 const app = createApp(App);

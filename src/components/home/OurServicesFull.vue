@@ -21,13 +21,17 @@ export default {
   <section>
     <div class="container">
       <h2 class="text-center pt-5">I nostri servizi</h2>
-      <div class="row g-3 pt-5 pb-3">
-        <div class="col-12 col-md-6 col-xl-4" v-for="service in store.services">
+      <div class="row g-3 py-5">
+        <div
+          class="col-12 col-md-6 col-xl-4"
+          v-for="service in store.servicesfull"
+        >
           <router-link
             :to="{
               name: 'service-details',
               params: { slug: service.slug },
             }"
+            onclick="location.href='#top';"
             ><div class="card h-100">
               <div class="img-container">
                 <img
@@ -43,18 +47,6 @@ export default {
                 </p>
               </div>
             </div>
-          </router-link>
-        </div>
-      </div>
-      <div class="d-flex justify-content-center pb-4">
-        <div class="btn-sage">
-          <router-link
-            :to="{ name: 'service' }"
-            active-class="active"
-            onclick="location.href='#top';"
-            @click="toggleMenu"
-          >
-            Vai a tutti i servizi
           </router-link>
         </div>
       </div>

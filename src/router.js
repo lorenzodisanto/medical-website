@@ -39,5 +39,14 @@ const router = createRouter({
       component: Details,
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      // Usa la posizione salvata quando si torna indietro o si va avanti
+      return savedPosition;
+    } else {
+      // Scorri all'inizio della pagina
+      return { top: 0 };
+    }
+  },
 });
 export { router };

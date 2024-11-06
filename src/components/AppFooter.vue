@@ -22,7 +22,7 @@ export default {
                 <font-awesome-icon
                   :icon="['fas', 'location-dot']"
                   class="me-3 fs-5"
-                />Via Benevento 19, 82037 Telese Terme (BN)
+                />Via Benevento 19, 82037 Telese (BN)
               </li>
               <li>
                 <font-awesome-icon
@@ -31,25 +31,30 @@ export default {
                 />+39 347 89 60 497
               </li>
               <li>
-                <font-awesome-icon
-                  :icon="['fas', 'mobile-screen']"
-                  class="me-3 fs-5"
-                />0824 97 68 28
+                <font-awesome-icon :icon="['fas', 'phone']" class="me-3 fs-5" />
+                0824 97 68 28
               </li>
               <li class="mail-link">
-                <a href="mailto:dott.salvatoredisanto@gmail.com"
+                <a href="mailto:info@di-santo.it"
                   ><font-awesome-icon
                     :icon="['fas', 'envelope']"
                     class="me-3 fs-5"
-                  />dott.salvatoredisanto@gmail.com</a
+                  />info@di-santo.it</a
                 >
               </li>
-              <li class="link-instagram">
+            </ul>
+            <ul class="d-flex ps-0">
+              <li class="link-instagram pe-3">
                 <a
                   href="https://www.instagram.com/disanto_odonto_specialistica/"
                   target="_blank"
                   ><font-awesome-icon :icon="['fab', 'instagram']"
                 /></a>
+              </li>
+              <li class="link-instagram">
+                <a href="#" target="_blank"
+                  ><font-awesome-icon :icon="['fab', 'square-facebook']" />
+                </a>
               </li>
             </ul>
           </div>
@@ -58,13 +63,12 @@ export default {
           <div class="py-3">
             <h4>Servizi</h4>
             <ul>
-              <li v-for="service in store.services" class="service-footer">
+              <li v-for="service in store.servicesfull" class="service-footer">
                 <router-link
                   :to="{
                     name: 'service-details',
                     params: { slug: service.slug },
                   }"
-                  onclick="location.href='#top';"
                 >
                   - {{ service.name }}
                 </router-link>

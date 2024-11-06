@@ -1,15 +1,15 @@
 <script>
-import OurServices from "../components/home/OurServices.vue";
+import OurServicesFull from "../components/home/OurServicesFull.vue";
 export default {
   name: "AppService",
 
-  components: { OurServices },
+  components: { OurServicesFull },
 };
 </script>
 
 <template>
   <section>
-    <our-services></our-services>
+    <our-services-full></our-services-full>
   </section>
 </template>
 

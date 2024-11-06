@@ -24,7 +24,7 @@ export default {
           </div>
 
           <h4>Indirizzo</h4>
-          <p>Via Benevento 19, 82037 Telese Terme (BN)</p>
+          <p>Via Benevento 19, 82037 Telese (BN)</p>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
           <font-awesome-icon
@@ -40,7 +40,7 @@ export default {
             class="mb-3 fs-1 icon-box"
           />
           <h4>Telefono/Whatsapp</h4>
-          <p>+39 347 89 60 497</p>
+          <p class="mb-0">+39 347 89 60 497</p>
           <p>0824 97 68 28</p>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
@@ -49,7 +49,7 @@ export default {
             class="mb-3 fs-1 icon-box"
           />
           <h4>Email</h4>
-          <p>dott.salvatoredisanto@gmail.com</p>
+          <p>info@di-santo.it</p>
         </div>
       </div>
     </div>
