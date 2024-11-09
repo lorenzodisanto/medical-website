@@ -6,15 +6,28 @@ export default {
 
 <template>
   <section>
-    <div class="container">
-      <h2 class="pt-5 mb-5 text-center">Prenota un appuntamento</h2>
-      <p class="fs-5">
+    <div class="image-top-service">
+      <img src="/image/contatti.png" alt="" />
+      <div class="container">
+        <div class="path-router">
+          <router-link to="/" class="pe-2 text-decoration-underline"
+            >Home</router-link
+          >
+
+          >
+          <a href="">Contatti</a>
+        </div>
+      </div>
+    </div>
+    <div class="container py-4">
+      <h2 class="text-center fs-1 py-2">Prenota un appuntamento</h2>
+      <p>
         Contatta il centro per prenotare un appuntamento o per qualsiasi altra
         domanda. Siamo qui per offrirti le migliori cure odontoiatriche e
         rispondere a tutte le tue esigenze. Lo studio riceve solo su
         appuntamento.
       </p>
-      <div class="row py-5">
+      <div class="row pt-4">
         <div class="col-12 col-md-6 col-lg-3">
           <div>
             <font-awesome-icon
@@ -77,8 +90,41 @@ section {
   background-attachment: fixed;
   background-size: cover;
   background-position: right;
+
+  .image-top-service {
+    height: 400px;
+    position: relative;
+    box-shadow: 0px 2px 3px 0px #1f3c3e;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      opacity: 0.6;
+    }
+    .container {
+      position: relative;
+      .path-router {
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.468);
+        display: block;
+        padding: 5px 15px;
+        margin-right: 10px;
+        border-radius: 5px;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
   p {
     text-align: justify;
+    font-size: 0.9rem;
   }
   .row {
     text-align: center;
@@ -92,6 +138,22 @@ section {
     height: 40px;
     padding: 20px;
     border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    p {
+      font-size: 1.2rem;
+    }
   }
 }
 </style>

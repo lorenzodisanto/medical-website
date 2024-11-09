@@ -3,6 +3,9 @@ import App from "./App.vue";
 
 import VueGoogleMaps from "@fawmi/vue-google-maps";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import { router } from "./router";
 
 // Import all of Bootstrap's JS
@@ -55,5 +58,7 @@ app.use(VueGoogleMaps, {
 
 app.use(router);
 app.component("font-awesome-icon", FontAwesomeIcon);
+
+AOS.init();
 
 app.mount("#app");

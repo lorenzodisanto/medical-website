@@ -13,15 +13,15 @@ export default {
         },
         {
           text_01:
-            "Studio Odontoiatrico che mette al centro di tutte le cure il Microscopio e l'innovazione digitale",
-          img: "slide_02.jpg",
+            "Studio Odontoiatrico che mette al centro di tutte le cure il <b>Microscopio</b> e l'innovazione digitale",
+          img: "slide_01.png",
         },
         {
           text_01:
             "L'Odontoiatra al Microscopio è un medico che non si accontenta.",
           text_02:
             "Preciso, attento, delicato. Richiede il massimo a se stesso per dare il massimo ai propri pazienti",
-          img: "slide_03.JPEG",
+          img: "slide_01.png",
         },
       ],
     };
@@ -65,14 +65,14 @@ export default {
 <template>
   <section>
     <!-- HERO MOBILE -->
-    <div class="d-md-none">
-      <div class="pt-5 px-5">
+    <div class="d-md-none section-mobile">
+      <div class="px-4 pt-5 mobile-image">
         <img
           src="/public/logo/DiSanto.logotipo.payoff.verticale-01.png"
           alt=""
         />
       </div>
-      <div class="slide-mobile">
+      <div class="mobile-slide">
         <img src="/public/image/slide_01.png" alt="" />
       </div>
     </div>
@@ -84,9 +84,11 @@ export default {
           src="/public/logo/DiSanto.logotipo.payoff.verticale-01.png"
           alt=""
         />
-        <h1 class="mt-5">{{ slides[activeSlide].title }}</h1>
-        <h3 class="mt-5 mb-0">{{ slides[activeSlide].text_01 }}</h3>
-        <h3>{{ slides[activeSlide].text_02 }}</h3>
+        <h1>
+          {{ slides[activeSlide].title }}
+        </h1>
+        <h3 class="mt-5 mb-3" v-html="slides[activeSlide].text_01"></h3>
+        <h3 v-html="slides[activeSlide].text_02"></h3>
       </div>
       <div class="hero-image">
         <img :src="buildImagePath(slides[activeSlide].img)" alt="" />
@@ -106,16 +108,37 @@ export default {
 section {
   background-image: url(../../assets/hero-background.png);
   background-size: cover;
-  height: 100%;
+  height: 550px;
   position: relative;
+
+  .section-mobile {
+    position: relative;
+    height: 100%;
+    .mobile-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      img {
+        width: 300px;
+      }
+    }
+    .mobile-slide {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      img {
+        width: 300px;
+      }
+    }
+  }
 
   .slider-content {
     display: none;
-
+    position: relative;
     height: 100%;
 
     .hero-text {
-      margin-top: 80px;
+      margin-top: 40px;
       width: 50%;
       img {
         width: 80%;
@@ -123,10 +146,17 @@ section {
       h1 {
         font-weight: 500;
         margin-top: 50px;
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 1.2rem;
       }
     }
     .hero-image {
       width: 500px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -138,7 +168,8 @@ section {
     .arrow {
       position: absolute;
       font-size: 2rem;
-      display: flex;
+      // display: flex;
+      display: none;
       justify-content: center;
       align-items: center;
       border-radius: 50%;
@@ -146,20 +177,74 @@ section {
       cursor: pointer;
     }
     .prev {
-      left: 50px;
+      left: -50px;
     }
     .next {
-      right: 50px;
+      right: -50px;
+    }
+  }
+}
+
+@media screen and (min-width: 545px) {
+  section {
+    .section-mobile {
+      .mobile-slide {
+        img {
+          width: 350px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  section {
+    .section-mobile {
+      .mobile-slide {
+        img {
+          width: 380px;
+        }
+      }
     }
   }
 }
 
 @media screen and (min-width: 768px) {
   section {
-    height: 675px;
+    height: 640px;
+
     .slider-content {
       display: flex;
       justify-content: space-between;
+      .hero-image {
+        width: 460px;
+      }
+
+      .hero-text {
+        h1 {
+          font-weight: 500;
+          margin-top: 50px;
+          font-size: 2.5rem;
+        }
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    .slider-content {
+      .hero-text {
+        h1 {
+          font-size: 2.6rem;
+        }
+        h3 {
+          font-size: 1.7rem;
+        }
+      }
     }
   }
 }

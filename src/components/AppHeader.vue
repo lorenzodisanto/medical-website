@@ -26,38 +26,22 @@ export default {
         <div>
           <ul class="d-flex mb-0">
             <li>
-              <router-link
-                :to="{ name: 'about' }"
-                active-class="active"
-                onclick="location.href='#top';"
-              >
+              <router-link :to="{ name: 'about' }" active-class="active">
                 CHI SIAMO
               </router-link>
             </li>
             <li>
-              <router-link
-                :to="{ name: 'service' }"
-                active-class="active"
-                onclick="location.href='#top';"
-              >
+              <router-link :to="{ name: 'service' }" active-class="active">
                 SERVIZI
               </router-link>
             </li>
             <li>
-              <router-link
-                :to="{ name: 'gallery' }"
-                active-class="active"
-                onclick="location.href='#top';"
-              >
+              <router-link :to="{ name: 'gallery' }" active-class="active">
                 FOTOGALLERY
               </router-link>
             </li>
             <li>
-              <router-link
-                :to="{ name: 'contact' }"
-                active-class="active"
-                onclick="location.href='#top';"
-              >
+              <router-link :to="{ name: 'contact' }" active-class="active">
                 CONTATTACI
               </router-link>
             </li>
@@ -145,6 +129,7 @@ header {
   background-color: white;
   box-shadow: 0px 2px 3px 0px $sage;
   z-index: 1;
+  // height: 80px;
 
   .header-logo {
     width: 200px;

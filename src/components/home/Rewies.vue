@@ -64,10 +64,14 @@ export default {
 <template>
   <section>
     <div class="d-lg-flex">
-      <div class="image-review">
+      <div
+        class="image-review"
+        data-aos="zoom-in-down"
+        data-aos-duration="1500"
+      >
         <img src="../../assets/review.jpg" alt="" />
       </div>
-      <div class="text-review">
+      <div class="text-review" data-aos="zoom-in-down" data-aos-duration="1500">
         <div class="review-box">
           <div>
             <h4 class="text-center mb-2">{{ reviews[activeSlide].name }}</h4>

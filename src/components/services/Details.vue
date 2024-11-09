@@ -40,16 +40,18 @@ export default {
   <section>
     <div class="image-top-service">
       <img :src="buildImagePath(service.image)" alt="" />
-      <div class="path-router">
-        <router-link to="/" class="pe-2 text-decoration-underline"
-          >Home</router-link
-        >
-        >
-        <router-link to="/servizi" class="px-2 text-decoration-underline"
-          >Servizi</router-link
-        >
-        >
-        <a href="">{{ service.name }}</a>
+      <div class="container">
+        <div class="path-router">
+          <router-link to="/" class="pe-2 text-decoration-underline"
+            >Home</router-link
+          >
+          >
+          <router-link to="/servizi" class="px-2 text-decoration-underline"
+            >Servizi</router-link
+          >
+          >
+          <a href="">{{ service.name }}</a>
+        </div>
       </div>
     </div>
     <div class="container py-5">
@@ -58,14 +60,14 @@ export default {
           <div class="service-title">
             <h2 class="mt-4 mb-4">{{ service.name }}</h2>
           </div>
-          <p class="fs-5">{{ service.details }}</p>
+          <p>{{ service.details }}</p>
         </div>
       </div>
     </div>
   </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .image-top-service {
   height: 400px;
   position: relative;
@@ -75,30 +77,46 @@ export default {
     height: 100%;
     object-fit: cover;
     object-position: top;
+    opacity: 0.6;
   }
-}
+  .container {
+    position: relative;
+    .path-router {
+      position: absolute;
+      bottom: 20px;
+      left: 10px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.468);
+      display: block;
+      padding: 5px 15px;
+      margin-right: 10px;
+      border-radius: 5px;
 
-.path-router {
-  position: absolute;
-  bottom: 20px;
-  left: 10px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.468);
-  display: block;
-  padding: 5px 15px;
-  margin-right: 10px;
-  border-radius: 5px;
-
-  a {
-    text-decoration: none;
-    color: white;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
   }
 }
 
 p {
   text-align: justify;
+  font-size: 0.8rem;
 }
 .image-service {
   width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  p {
+    font-size: 1.2rem;
+  }
 }
 </style>

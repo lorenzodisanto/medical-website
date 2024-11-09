@@ -6,15 +6,19 @@ export default {
 
 <template>
   <section>
-    <div class="container-fluid welcome-content">
-      <div class="welcome-image py-4">
-        <h3 class="mb-4 d-lg-none">Benvenuti nel nostro centro!</h3>
+    <div class="container welcome-content">
+      <div
+        class="welcome-image py-4"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      >
+        <h3 class="mb-4 d-lg-none fs-2">Benvenuti nel nostro centro!</h3>
         <img src="../../assets/sala-attesa.jpg" alt="" />
       </div>
-      <div>
-        <div>
-          <h3 class="d-none d-lg-block">Benvenuti nel nostro centro!</h3>
-          <p class="welcome-text pb-3">
+      <div class="welcome-description">
+        <div class="pt-lg-5" data-aos="fade-right" data-aos-duration="1500">
+          <h3 class="d-none d-lg-block pb-3">Benvenuti nel nostro centro!</h3>
+          <p class="welcome-text">
             Di Santo Odontoiatria Specialistica è un centro odontoiatrico a
             Telese Terme (BN). Lavoriamo con passione, con precisione grazie ai
             nostri Microscopi che usiamo in tutti i campi dell’odontoiatria e
@@ -22,14 +26,13 @@ export default {
             e la salute dei pazienti. Ci occupiamo di . . .
           </p>
         </div>
-        <div class="d-inline-block pb-3">
+        <div
+          class="d-inline-block mb-3"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <div class="btn-sage">
-            <router-link
-              :to="{ name: 'about' }"
-              active-class="active"
-              onclick="location.href='#top';"
-              @click="toggleMenu"
-            >
+            <router-link :to="{ name: 'about' }" active-class="active">
               Continua a leggere
             </router-link>
           </div>
@@ -48,44 +51,59 @@ section {
   background-size: cover;
   background-position: center;
   color: black;
-  // box-shadow: 0px 2px 3px 0px $fresh-teal;
   .welcome-content {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    padding: 0 20px;
+    font-size: 0.9rem;
 
     .welcome-image {
-      // text-align: end;
       text-align: center;
       img {
-        // width: 80%;
         border-radius: 10px;
       }
     }
-    .welcome-text {
-      // width: 80%;
-      text-align: justify;
+    .welcome-description {
+      .welcome-text {
+        text-align: justify;
+      }
+      .btn-sage {
+        padding: 8px 13px;
+        a {
+          font-size: 0.9rem;
+        }
+      }
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  section {
+    .welcome-content {
+      font-size: 1rem;
+
+      .welcome-description {
+        .btn-sage {
+          padding: 10px 15px;
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 992px) {
   .welcome-content {
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
+    gap: 20px;
 
-    .welcome-image {
-      text-align: end;
-      text-align: center;
-      img {
-        width: 80%;
-        border-radius: 10px;
-      }
+    .welcome-description {
+      width: 50%;
     }
-    .welcome-text {
-      width: 80%;
-      text-align: justify;
-      font-size: 0.8rem;
+    .welcome-image {
+      width: 50%;
     }
   }
 }

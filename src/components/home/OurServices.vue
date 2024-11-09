@@ -20,15 +20,21 @@ export default {
 <template>
   <section>
     <div class="container">
-      <h2 class="text-center pt-5">I nostri servizi</h2>
+      <h2 class="text-center pt-5" data-aos="zoom-in" data-aos-duration="1500">
+        I nostri servizi
+      </h2>
       <div class="row g-3 pt-5 pb-3">
-        <div class="col-12 col-md-6 col-xl-4" v-for="service in store.services">
+        <div class="col-12 col-lg-4" v-for="service in store.services">
           <router-link
             :to="{
               name: 'service-details',
               params: { slug: service.slug },
             }"
-            ><div class="card h-100">
+            ><div
+              class="card h-100"
+              data-aos="zoom-in-down"
+              data-aos-duration="1500"
+            >
               <div class="img-container">
                 <img
                   :src="buildImagePath(service.image)"
@@ -46,8 +52,8 @@ export default {
           </router-link>
         </div>
       </div>
-      <div class="d-flex justify-content-center pb-4">
-        <div class="btn-sage">
+      <div class="d-flex justify-content-center pb-5">
+        <div class="btn-sage" data-aos="zoom-in-down" data-aos-duration="1500">
           <router-link
             :to="{ name: 'service' }"
             active-class="active"
@@ -66,6 +72,9 @@ export default {
 @use "../../styles/partials/variables.scss" as *;
 
 .card {
+  background-color: #7dc9b8;
+  box-shadow: 0px 2px 3px 0px #1f3c3e;
+
   .img-container {
     overflow: hidden;
     .card-img-top {
@@ -76,7 +85,6 @@ export default {
     h5 {
       font-weight: 600;
     }
-    background-color: #7dc9b8;
   }
 }
 .card:hover img {
