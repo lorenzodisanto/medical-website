@@ -38,7 +38,6 @@ export default {
               name: 'service-details',
               params: { slug: service.slug },
             }"
-            onclick="location.href='#top';"
             ><div class="card h-100">
               <div class="img-container">
                 <img

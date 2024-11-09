@@ -54,12 +54,13 @@ export default {
         </div>
       </div>
     </div>
-    <div class="container py-5">
-      <div>
-        <div>
-          <div class="service-title">
-            <h2 class="mt-4 mb-4">{{ service.name }}</h2>
-          </div>
+    <div class="container py-4">
+      <h2 class="text-center fs-1 py-2">{{ service.name }}</h2>
+      <div class="service-content">
+        <div class="service-image">
+          <img :src="buildImagePath(service.image)" alt="" />
+        </div>
+        <div class="service-description pt-2">
           <p>{{ service.details }}</p>
         </div>
       </div>
@@ -104,13 +105,32 @@ p {
   text-align: justify;
   font-size: 0.8rem;
 }
-.image-service {
-  width: 300px;
+
+.service-image {
+  img {
+    border-radius: 10px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   p {
     font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .service-content {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    gap: 20px;
+
+    .service-description {
+      width: 50%;
+    }
+    .service-image {
+      width: 50%;
+    }
   }
 }
 

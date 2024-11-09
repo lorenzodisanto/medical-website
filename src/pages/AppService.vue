@@ -10,7 +10,7 @@ export default {
 <template>
   <section>
     <div class="image-top-service">
-      <img src="/image/poltrona.jpg" alt="" />
+      <img src="/image/poltrona.png" alt="" />
       <div class="container">
         <div class="path-router">
           <router-link to="/" class="pe-2 text-decoration-underline"

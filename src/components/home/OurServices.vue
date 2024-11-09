@@ -53,7 +53,7 @@ export default {
         </div>
       </div>
       <div class="d-flex justify-content-center pb-5">
-        <div class="btn-sage" data-aos="zoom-in-down" data-aos-duration="1500">
+        <div class="btn-sage">
           <router-link
             :to="{ name: 'service' }"
             active-class="active"
@@ -93,5 +93,8 @@ export default {
 }
 a {
   text-decoration: none;
+}
+.btn-sage:hover {
+  transform: scale(1.02);
 }
 </style>
