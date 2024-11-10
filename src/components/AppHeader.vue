@@ -73,7 +73,6 @@ export default {
             <router-link
               :to="{ name: 'about' }"
               active-class="active"
-              onclick="location.href='#top';"
               @click="toggleMenu"
             >
               CHI SIAMO
@@ -83,7 +82,6 @@ export default {
             <router-link
               :to="{ name: 'service' }"
               active-class="active"
-              onclick="location.href='#top';"
               @click="toggleMenu"
             >
               SERVIZI
@@ -93,7 +91,6 @@ export default {
             <router-link
               :to="{ name: 'gallery' }"
               active-class="active"
-              onclick="location.href='#top';"
               @click="toggleMenu"
             >
               FOTOGALLERY
@@ -103,7 +100,6 @@ export default {
             <router-link
               :to="{ name: 'contact' }"
               active-class="active"
-              onclick="location.href='#top';"
               @click="toggleMenu"
             >
               CONTATTI
