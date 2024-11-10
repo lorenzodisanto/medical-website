@@ -52,7 +52,7 @@ section {
   background-position: center;
   color: black;
   .welcome-content {
-    padding: 0 20px;
+    // padding: 0 20px;
     font-size: 0.9rem;
 
     .welcome-image {
@@ -62,9 +62,9 @@ section {
       }
     }
     .welcome-description {
-      .welcome-text {
-        text-align: justify;
-      }
+      // .welcome-text {
+      //   text-align: justify;
+      // }
       .btn-sage {
         padding: 8px 13px;
         a {

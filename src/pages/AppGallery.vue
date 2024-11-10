@@ -20,8 +20,16 @@ export default {
       </div>
     </div>
     <div class="container py-4">
-      <h2 class="text-center fs-1 py-2">Fotogallery</h2>
-      <p class="fs-5">Nessuna foto disponibile</p>
+      <h2
+        class="text-center fs-1 py-2"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      >
+        Fotogallery
+      </h2>
+      <p class="fs-5" data-aos="fade-right" data-aos-duration="1500">
+        Nessuna foto disponibile
+      </p>
       <img
         src="/public/logo/DiSanto.logotipo.payoff.orizzontale-01.png"
         alt=""
@@ -37,7 +45,7 @@ section {
   background-attachment: fixed;
 
   .image-top-service {
-    height: 400px;
+    height: 250px;
     position: relative;
     box-shadow: 0px 2px 3px 0px #1f3c3e;
     img {
@@ -65,6 +73,14 @@ section {
           color: white;
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    .image-top-service {
+      height: 400px;
     }
   }
 }

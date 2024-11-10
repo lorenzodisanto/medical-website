@@ -71,6 +71,11 @@ export default {
 <style lang="scss" scoped>
 @use "../../styles/partials/variables.scss" as *;
 
+p {
+  font-size: 0.9rem;
+  text-align: left;
+}
+
 .card {
   background-color: #7dc9b8;
   box-shadow: 0px 2px 3px 0px #1f3c3e;
@@ -96,5 +101,17 @@ a {
 }
 .btn-sage:hover {
   transform: scale(1.02);
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  p {
+    font-size: 1.2rem;
+  }
 }
 </style>

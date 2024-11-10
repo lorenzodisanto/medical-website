@@ -38,6 +38,11 @@ const router = createRouter({
       name: "service-details",
       component: Details,
     },
+    // Rotta per l'errore 404 che reindirizza alla home
+    {
+      path: "/:catchAll(.*)",
+      redirect: { name: "home" },
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

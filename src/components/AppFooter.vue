@@ -24,15 +24,21 @@ export default {
                   class="me-3 fs-5"
                 />Via Benevento 19, 82037 Telese (BN)
               </li>
-              <li>
-                <font-awesome-icon
-                  :icon="['fas', 'mobile-screen']"
-                  class="me-3 fs-5"
-                />+39 347 89 60 497
+              <li class="mail-link">
+                <a href="tel:+393478960497"
+                  ><font-awesome-icon
+                    :icon="['fas', 'mobile-screen']"
+                    class="me-3 fs-5"
+                  />+39 347 89 60 497</a
+                >
               </li>
-              <li>
-                <font-awesome-icon :icon="['fas', 'phone']" class="me-3 fs-5" />
-                0824 97 68 28
+              <li class="mail-link">
+                <a href="tel:0824976828"
+                  ><font-awesome-icon
+                    :icon="['fas', 'phone']"
+                    class="me-3 fs-5"
+                  />0824 97 68 28</a
+                >
               </li>
               <li class="mail-link">
                 <a href="mailto:info@di-santo.it"
@@ -52,7 +58,9 @@ export default {
                 /></a>
               </li>
               <li class="link-instagram">
-                <a href="#" target="_blank"
+                <a
+                  href="https://www.facebook.com/DiSantoOdontoiatria"
+                  target="_blank"
                   ><font-awesome-icon :icon="['fab', 'square-facebook']" />
                 </a>
               </li>

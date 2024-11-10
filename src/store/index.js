@@ -6,7 +6,7 @@ export const store = reactive({
     {
       name: "Laser Dentistry",
       description:
-        "Il Laser Erbio è una tecnologia utilizzata da pochissimi studi odontoiatrici.",
+        "Il Laser Erbio è una tecnologia utilizzata da pochissimi studi odontoiatrici. Ha molte indicazioni . . .",
       image: "laser.png",
       slug: "laser-dentistry",
       details:
@@ -15,7 +15,7 @@ export const store = reactive({
     {
       name: "Igiene professionale (GBT)",
       description:
-        "Microscopio e GBT (Guided Biofilm Therapy): una coppia vincente!",
+        "Microscopio e GBT (Guided Biofilm Therapy): una coppia vincente! Certificati dalla . . .",
       image: "gbt.jpg",
       slug: "igiene-professionale-gbt",
       details:
@@ -25,7 +25,7 @@ export const store = reactive({
     {
       name: "Gnatologia ed Elettromiografia di superficie",
       description:
-        "Digrigni o serri i denti? Soffri di mal di testa o dolori cervicali? ",
+        "Digrigni o serri i denti? Soffri di mal di testa o dolori . . .",
       image: "gnatologia.jpg",
       slug: "gnatologia-ed-elettromiografia-di-superficie",
       details:
@@ -34,7 +34,7 @@ export const store = reactive({
     {
       name: "Ortodonzia",
       description:
-        "Ci occupiamo di Ortodonzia intercettiva, tradizionale ed invisibile.",
+        "Ci occupiamo di Ortodonzia intercettiva, tradizionale ed invisibile. Riuscire a stabilire . . .",
       image: "ortodonzia.png",
       slug: "ortodonzia",
       details:
@@ -43,7 +43,7 @@ export const store = reactive({
     {
       name: "Chirurgia orale e Implantologia",
       description:
-        "Offriamo servizi di chirurgia orale ed implantologia computer guidata ed avanzata ",
+        "Offriamo servizi di chirurgia orale ed implantologia computer guidata ed avanzata . . .",
       image: "chirurgia.jpg",
       slug: "chirurgia-orale-e-implantologia",
       details:
@@ -53,7 +53,7 @@ export const store = reactive({
     {
       name: "Radiologia",
       description:
-        "I servizi di radiologia digitale che offriamo: Ortopantomografia, endorale e TAC 3D",
+        "I servizi di radiologia digitale che offriamo: Ortopantomografia, endorale e TAC 3D . . .",
       image: "radiologia.jpg",
       slug: "radiologia",
       details:
@@ -62,7 +62,7 @@ export const store = reactive({
     {
       name: "Scansione digitale",
       description:
-        "Lo scanner intraorale è un dispositivo per creare un modello digitale delle arcate dentali. ",
+        "Lo scanner intraorale è un dispositivo che esegue una scansione del cavo orale per creare . . . ",
       image: "scanner.png",
       slug: "scansione-digitale",
       details:
@@ -74,7 +74,7 @@ export const store = reactive({
     {
       name: "Laser Dentistry",
       description:
-        "Il Laser Erbio è una tecnologia utilizzata da pochissimi studi odontoiatrici.",
+        "Il Laser Erbio è una tecnologia utilizzata da pochissimi studi odontoiatrici. Ha molte indicazioni . . .",
       image: "laser.png",
       slug: "laser-dentistry",
       details:
@@ -83,7 +83,7 @@ export const store = reactive({
     {
       name: "Igiene professionale (GBT)",
       description:
-        "Microscopio e GBT (Guided Biofilm Therapy): una coppia vincente!",
+        "Microscopio e GBT (Guided Biofilm Therapy): una coppia vincente! Certificati dalla . . .",
       image: "gbt.jpg",
       slug: "igiene-professionale-gbt",
       details:
@@ -92,7 +92,7 @@ export const store = reactive({
     {
       name: "Gnatologia ed Elettromiografia di superficie",
       description:
-        "Digrigni o serri i denti? Soffri di mal di testa o dolori cervicali? ",
+        "Digrigni o serri i denti? Soffri di mal di testa o dolori . . .",
       image: "gnatologia.jpg",
       slug: "gnatologia-ed-elettromiografia-di-superficie",
       details:

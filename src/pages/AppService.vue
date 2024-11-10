@@ -34,7 +34,7 @@ section {
   background-position: right;
 
   .image-top-service {
-    height: 400px;
+    height: 250px;
     position: relative;
     box-shadow: 0px 2px 3px 0px #1f3c3e;
     img {
@@ -62,6 +62,14 @@ section {
           color: white;
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    .image-top-service {
+      height: 400px;
     }
   }
 }

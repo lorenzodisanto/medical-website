@@ -20,13 +20,27 @@ export default {
       </div>
     </div>
     <div class="container py-4">
-      <h2 class="text-center fs-1 py-2">Chi siamo</h2>
+      <h2
+        class="text-center fs-1 py-2"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      >
+        Chi siamo
+      </h2>
       <div>
         <div class="about-content mb-3">
-          <div class="about-image py-4">
+          <div
+            class="about-image py-4"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <img src="/image/ingresso.jpg" alt="" />
           </div>
-          <div class="about-description pt-lg-5">
+          <div
+            class="about-description pt-lg-5"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <p>
               Di Santo Odontoiatria Specialistica è un centro odontoiatrico a
               Telese Terme (BN). Lavoriamo con passione, con precisione grazie
@@ -55,8 +69,19 @@ export default {
             <img src="/image/poltrona.jpg" alt="" />
           </div>
         </div> -->
-        <div class="about-content">
-          <div class="about-description pt-lg-3">
+        <div class="about-content reverse">
+          <div
+            class="about-image"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <img src="/image/slide_03.jpg" alt="" />
+          </div>
+          <div
+            class="about-description pt-3"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <p>
               Sono il dott <b>Salvatore Di Santo</b>, direttore Sanitario della
               clinica “Di Santo Odontoiatria Specialistica”, Centro di
@@ -73,9 +98,6 @@ export default {
               soluzioni e cure di qualità per tutti.
             </p>
           </div>
-          <div class="about-image">
-            <img src="/image/slide_03.jpg" alt="" />
-          </div>
         </div>
       </div>
     </div>
@@ -89,7 +111,7 @@ section {
   background-attachment: fixed;
 
   .image-top-service {
-    height: 400px;
+    height: 250px;
     position: relative;
     box-shadow: 0px 2px 3px 0px #1f3c3e;
     img {
@@ -121,7 +143,7 @@ section {
   }
 
   .about-content {
-    padding: 0 20px;
+    // padding: 0 20px;
     font-size: 0.9rem;
     p {
       text-align: justify;
@@ -138,6 +160,9 @@ section {
 
 @media screen and (min-width: 768px) {
   section {
+    .image-top-service {
+      height: 400px;
+    }
     .about-content {
       font-size: 1rem;
     }
@@ -157,6 +182,10 @@ section {
     .about-image {
       width: 50%;
     }
+  }
+
+  .about-content.reverse {
+    flex-direction: row-reverse;
   }
 }
 

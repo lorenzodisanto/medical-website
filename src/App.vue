@@ -1,21 +1,39 @@
 <script>
-// importo header e footer
+// Importa header, footer e loader
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
+import Loader from "./components/Loader.vue";
 
 export default {
   data() {
-    return {};
+    return {
+      isLoading: true, // Stato per gestire il loader
+    };
   },
 
-  components: { AppHeader, AppFooter },
+  components: { AppHeader, AppFooter, Loader },
+
+  mounted() {
+    // Nasconde il loader dopo 2 secondi
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 1000);
+  },
 };
 </script>
 
 <template>
-  <app-header></app-header>
-  <router-view></router-view>
-  <app-footer></app-footer>
+  <div>
+    <!-- Mostra il loader se isLoading è true -->
+    <Loader v-if="isLoading" />
+
+    <!-- Mostra il contenuto solo quando il loader è nascosto -->
+    <div v-else>
+      <app-header></app-header>
+      <router-view></router-view>
+      <app-footer></app-footer>
+    </div>
+  </div>
 </template>
 
 <style lang="scss">

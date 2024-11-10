@@ -20,14 +20,20 @@ export default {
       </div>
     </div>
     <div class="container py-4">
-      <h2 class="text-center fs-1 py-2">Prenota un appuntamento</h2>
-      <p>
+      <h2
+        class="text-center fs-1 py-2"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      >
+        Prenota un appuntamento
+      </h2>
+      <p data-aos="fade-right" data-aos-duration="1500">
         Contatta il centro per prenotare un appuntamento o per qualsiasi altra
         domanda. Siamo qui per offrirti le migliori cure odontoiatriche e
         rispondere a tutte le tue esigenze. Lo studio riceve solo su
         appuntamento.
       </p>
-      <div class="row pt-4">
+      <div class="row pt-4" data-aos="zoom-in-down" data-aos-duration="1500">
         <div class="col-12 col-md-6 col-lg-3">
           <div>
             <font-awesome-icon
@@ -92,7 +98,7 @@ section {
   background-position: right;
 
   .image-top-service {
-    height: 400px;
+    height: 250px;
     position: relative;
     box-shadow: 0px 2px 3px 0px #1f3c3e;
     img {
@@ -123,7 +129,7 @@ section {
     }
   }
   p {
-    text-align: justify;
+    // text-align: justify;
     font-size: 0.9rem;
   }
   .row {
@@ -143,6 +149,9 @@ section {
 
 @media screen and (min-width: 768px) {
   section {
+    .image-top-service {
+      height: 400px;
+    }
     p {
       font-size: 1rem;
     }

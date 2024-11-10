@@ -55,12 +55,22 @@ export default {
       </div>
     </div>
     <div class="container py-4">
-      <h2 class="text-center fs-1 py-2">{{ service.name }}</h2>
+      <h2 class="fs-1 py-2" data-aos="fade-right" data-aos-duration="1500">
+        {{ service.name }}
+      </h2>
       <div class="service-content">
-        <div class="service-image">
+        <div
+          class="service-image"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <img :src="buildImagePath(service.image)" alt="" />
         </div>
-        <div class="service-description pt-2">
+        <div
+          class="service-description pt-2"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <p>{{ service.details }}</p>
         </div>
       </div>
@@ -70,7 +80,7 @@ export default {
 
 <style lang="scss" scoped>
 .image-top-service {
-  height: 400px;
+  height: 250px;
   position: relative;
   box-shadow: 0px 2px 3px 0px #1f3c3e;
   img {
@@ -102,7 +112,7 @@ export default {
 }
 
 p {
-  text-align: justify;
+  // text-align: justify;
   font-size: 0.8rem;
 }
 
@@ -115,6 +125,9 @@ p {
 @media screen and (min-width: 768px) {
   p {
     font-size: 1rem;
+  }
+  .image-top-service {
+    height: 400px;
   }
 }
 

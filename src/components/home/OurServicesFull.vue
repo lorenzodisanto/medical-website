@@ -20,8 +20,14 @@ export default {
 <template>
   <section>
     <div class="container py-4">
-      <h2 class="text-center fs-1 py-2">I nostri servizi</h2>
-      <p>
+      <h2
+        class="text-center fs-1 py-2"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      >
+        I nostri servizi
+      </h2>
+      <p data-aos="fade-right" data-aos-duration="1500">
         Ci occupiamo di tutte le branche dell’Odontoiatria: Pedodonzia,
         Conservativa ed Endodonzia, Chirurgia orale ed Implantologia,
         Riabilitazioni protesiche, Ortodonzia fissa, mobile ed invisibile,
@@ -38,7 +44,11 @@ export default {
               name: 'service-details',
               params: { slug: service.slug },
             }"
-            ><div class="card h-100">
+            ><div
+              class="card h-100"
+              data-aos="zoom-in-down"
+              data-aos-duration="1500"
+            >
               <div class="img-container">
                 <img
                   :src="buildImagePath(service.image)"
@@ -64,7 +74,7 @@ export default {
 @use "../../styles/partials/variables.scss" as *;
 p {
   font-size: 0.9rem;
-  text-align: justify;
+  text-align: left;
 }
 .card {
   background-color: #7dc9b8;

@@ -42,7 +42,7 @@ export default {
             </li>
             <li>
               <router-link :to="{ name: 'contact' }" active-class="active">
-                CONTATTACI
+                CONTATTI
               </router-link>
             </li>
           </ul>
@@ -106,7 +106,7 @@ export default {
               onclick="location.href='#top';"
               @click="toggleMenu"
             >
-              CONTATTACI
+              CONTATTI
             </router-link>
           </li>
           <li>
