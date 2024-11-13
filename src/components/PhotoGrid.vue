@@ -46,7 +46,7 @@ export default {
     <div v-if="showOverlay" class="overlay" @click="closeOverlay">
       <div class="overlay-content" @click.stop>
         <div class="overlay-photo-container">
-          <button class="close-button" @click="closeOverlay">✕</button>
+          <button class="close-button" @click="closeOverlay">&#x2715;</button>
           <img
             :src="selectedPhoto"
             alt="Selected Photo"
@@ -105,25 +105,25 @@ section {
         justify-content: center;
         .close-button {
           position: absolute;
+          padding: 0;
           top: 15px;
           right: 15px;
-          background: rgba(255, 255, 255, 0.8);
           border: none;
+          background-color: transparent;
           border-radius: 5px;
-          width: 30px;
-          height: 30px;
+          width: 35px;
+          height: 35px;
           font-size: 20px;
           font-weight: bold;
-          color: #333;
+          color: white;
           cursor: pointer;
           display: flex;
           align-items: center;
           justify-content: center;
-          transition: background 0.3s;
+          transition: 0.3s;
 
           &:hover {
-            background: rgba(255, 255, 255, 1);
-          }
+transform: scale(1.2);          }
         }
 
         .overlay-photo {
