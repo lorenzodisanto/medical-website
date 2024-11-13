@@ -139,6 +139,15 @@ section {
   section {
     .overlay {
       .overlay-content {
+        width: 80%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    .overlay {
+      .overlay-content {
         width: 70%;
       }
     }
