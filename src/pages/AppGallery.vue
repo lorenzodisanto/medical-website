@@ -1,6 +1,8 @@
 <script>
+import PhotoGrid from "../components/PhotoGrid.vue";
 export default {
   name: "AppGallery",
+  components: { PhotoGrid },
 };
 </script>
 
@@ -27,13 +29,10 @@ export default {
       >
         Fotogallery
       </h2>
-      <p class="fs-5" data-aos="fade-right" data-aos-duration="1500">
+      <!-- <p class="fs-5" data-aos="fade-right" data-aos-duration="1500">
         Nessuna foto disponibile
-      </p>
-      <img
-        src="/public/logo/DiSanto.logotipo.payoff.orizzontale-01.png"
-        alt=""
-      />
+      </p> -->
+      <photo-grid></photo-grid>
     </div>
   </section>
 </template>

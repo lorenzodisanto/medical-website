@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7dc9b8;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .sorriso {
+        transition: d 0.3s ease; /* Animazione morbida sul path */
+      }
+
+      /* Animazione per far sorridere */
+      .sorriso.sorridente {
+        d: path("M250,373.4c-57.3,0-111.5-18.4-156.9-53.1l18.5-24.1c40,30.7,87.9,46.9,138.4,46.9s98.4-16.2,138.4-46.9l18.5,24.1c-45.3,34.8-99.6,53.1-156.9,53.1Z");
+      }
+
+      /* Animazione per fare il sorriso triste */
+      .sorriso.triste {
+        d: path("M250,373.4c-57.3,0-111.5-18.4-156.9-53.1l18.5-24.1c40,20.7,87.9,10.9,138.4,10.9s98.4,9.8,138.4-10.9l18.5,24.1c-45.3,34.8-99.6,53.1-156.9,53.1Z");
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" width="500" height="500"/>
+  <g>
+    <path class="cls-1" d="M93.6,210.3c0-30.3,21-53.1,52.6-53.1s54.4,22.3,54.4,53.1v33.7h-31v-33.3c0-13.9-10-23.9-23.5-23.9s-21.9,10.3-21.6,23.2v33.9h-31v-33.7Z"/>
+    <path class="cls-1" d="M264.9,267h34.4v29.2h-98.6v-29.2h33.9v-107.5h30.3v107.5Z"/>
+    <path class="cls-1" d="M299.3,216.4c0-32.8,26.2-59.2,59-59.2s59,26.4,59,59.2-26.2,59.2-59,59.2-59-26.4-59-59.2ZM387,216.4c0-16.2-13-29.6-28.7-29.6s-28.5,13.4-28.5,29.6,12.3,29.6,28.5,29.6,28.7-13.4,28.7-29.6Z"/>
+    <path class="cls-1 sorriso" d="M250,373.4c-57.3,0-111.5-18.4-156.9-53.1l18.5-24.1c40,30.7,87.9,46.9,138.4,46.9s98.4-16.2,138.4-46.9l18.5,24.1c-45.3,34.8-99.6,53.1-156.9,53.1Z"/>
+  </g>
+
+  <!-- Aggiungi il controllo JS -->
+  <script>
+    const sorriso = document.querySelector('.sorriso');
+
+    // Cambia il sorriso quando clicchi sull'SVG
+    sorriso.addEventListener('click', () => {
+      if (sorriso.classList.contains('sorridente')) {
+        sorriso.classList.remove('sorridente');
+        sorriso.classList.add('triste');
+      } else {
+        sorriso.classList.remove('triste');
+        sorriso.classList.add('sorridente');
+      }
+    });
+  </script>
+</svg>

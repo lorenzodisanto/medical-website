@@ -99,4 +99,17 @@ export const store = reactive({
         "Digrigni o serri i denti? Soffri di mal di testa o dolori cervicali? Dolori all’articolazione temporo-mandibolare? Potrebbe trattarsi di malocclusione dentale. Con “Kinelock Dental”, un dispositivo di ultima generazione, è possibile valutare, con un esame veloce, confortevole e senza alcun fastidio, il tuo bilanciamento occlusale. Grazie al suo algoritmo esclusivo e la sua intelligenza artificiale, “Kinelock Dental” rilascia in pochi minuti un referto diagnostico che permette di individuare la corretta strategia di intervento per risolvere eventuali problemi legati alla malocclusione dentale.",
     },
   ],
+
+  photos: [
+    "01.jpg",
+    "02.jpg",
+    "03.jpg",
+    "04.jpg",
+    "05.jpg",
+    "06.jpg",
+    "07.jpg",
+    "08.jpg",
+    "09.jpg",
+    "10.jpg",
+  ],
 });
