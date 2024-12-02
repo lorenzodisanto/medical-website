@@ -111,5 +111,6 @@ export const store = reactive({
     "08.jpg",
     "09.jpg",
     "10.jpg",
+    "11.jpg",
   ],
 });
