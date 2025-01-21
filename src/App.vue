@@ -23,17 +23,11 @@ export default {
 </script>
 
 <template>
-  <div>
-    <!-- Mostra il loader se isLoading è true -->
-    <Loader v-if="isLoading" />
+  <!-- Mostra il contenuto solo quando il loader è nascosto -->
 
-    <!-- Mostra il contenuto solo quando il loader è nascosto -->
-    <div v-else>
-      <app-header></app-header>
-      <router-view></router-view>
-      <app-footer></app-footer>
-    </div>
-  </div>
+  <app-header></app-header>
+  <router-view> </router-view>
+  <app-footer></app-footer>
 </template>
 
 <style lang="scss">
